@@ -1,0 +1,96 @@
+﻿<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" asp-action="Index" asp-controller="Home">RPPP Homework - Group 05</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" asp-action="Index" asp-controller="Home">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Anton Macan
+          </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" asp-action="Index" asp-controller="Objekt">Objekti</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" asp-action="Index" asp-controller="OdrzavanjeObjekta">Odrzavanje objekta</a></li>
+                             <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" asp-action="Index" asp-controller="Kamera">Kamere</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" asp-action="Index" asp-controller="Slike">Slike</a></li>
+            </ul>
+        </li>
+
+        <li class ="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Joško Vrsalović
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" asp-action="Index" asp-controller="Autocesta">Autoceste</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-controller="Koncesionar">Koncesionari</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-controller="Obavijest">Obavijesti</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" asp-action="IndexVrsalovic" asp-controller="Report">Izvještaji</a></li>
+            </ul>
+        </li>
+
+        <li class ="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Fran Hruza
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" asp-action="Index" asp-controller="NaplatnaPostaja">Naplatne postaje</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-controller="ParkGospVoz">Parkirališta gospodarskih vozila</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-controller="Encpostaja">ENC postaje</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" asp-action="IndexHruza" asp-controller="Report">Izvještaji</a></li>
+            </ul>
+
+            @*<a class="nav-link" asp-action="Index" asp-controller="NaplatnaPostaja">Naplatne postaje</a>*@
+
+        </li>
+
+        <li class ="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Petar Novak
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" asp-action="Index" asp-controller="Odmorista">Odmorista</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-controller="TipSadrzaja">Tipovi sadržaja</a></li>
+            <hr />
+            <li><a class="dropdown-item" asp-action="Index" asp-controller="PetarReports">Izvještaji (PDF i excel)</a></li>
+          </ul>
+        </li>
+        
+        <li class ="nav-item dropdown">
+                    <a class="nav-link " id="navbarDropdown" role="button" d aria-expanded="false" asp-action="Index" asp-controller="ViewLog">Log</a>
+        </li>
+
+        @* <li class="nav-item dropdown">
+          @*<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Studenti
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Anton Macan</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Joško Vrsalovic</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Fran Hruza</a></li>
+                        <li><hr class="dropdown-divider"></li>
+
+            <li><a class="dropdown-item" href="#">Petar Novak</a></li>
+          </ul>
+        </li>*@   
+      </ul>
+     
+    </div>
+  </div>
+</nav>

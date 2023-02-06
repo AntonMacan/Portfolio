@@ -1,0 +1,39 @@
+﻿@model RPPP_WebApp.Models.Multimedija
+
+@{
+    ViewData["Title"] = "Izbriši";
+}
+
+<h1>Izbriši</h1>
+
+<h3>Jeste li sigurni</h3>
+<div>
+    <h4>Multimedija</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Naziv)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Naziv)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Url)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Url)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Odmoriste)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Odmoriste.Naziv)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Izbriši" class="btn btn-danger" /> |
+        <a asp-controller="Odmorista" asp-action="Details" asp-route-id="@Model.OdmoristeId">Natrag na odmorište</a>
+    </form>
+</div>

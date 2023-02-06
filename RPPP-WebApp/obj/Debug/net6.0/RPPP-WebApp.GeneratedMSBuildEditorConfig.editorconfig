@@ -1,0 +1,320 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RPPP_WebApp
+build_property.RootNamespace = RPPP_WebApp
+build_property.ProjectDir = /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Autocesta/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0b2Nlc3RhL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Autocesta/CreateDionica.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0b2Nlc3RhL0NyZWF0ZURpb25pY2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Autocesta/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0b2Nlc3RhL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Autocesta/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0b2Nlc3RhL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Autocesta/EditDionica.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0b2Nlc3RhL0VkaXREaW9uaWNhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Autocesta/GetDionice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0b2Nlc3RhL0dldERpb25pY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Autocesta/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0b2Nlc3RhL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Dionica/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlvbmljYS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Dionica/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlvbmljYS9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Dionica/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlvbmljYS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Dionica/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlvbmljYS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Encpostaja/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW5jcG9zdGFqYS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Encpostaja/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW5jcG9zdGFqYS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Encpostaja/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW5jcG9zdGFqYS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Kamera/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2FtZXJhL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Kamera/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2FtZXJhL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Kamera/Get.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2FtZXJhL0dldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Kamera/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2FtZXJhL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Koncesionar/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS29uY2VzaW9uYXIvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Koncesionar/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS29uY2VzaW9uYXIvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Koncesionar/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS29uY2VzaW9uYXIvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Koncesionar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS29uY2VzaW9uYXIvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Multimedija/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXVsdGltZWRpamEvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Multimedija/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXVsdGltZWRpamEvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Multimedija/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXVsdGltZWRpamEvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/NaplatnaPostaja/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmFwbGF0bmFQb3N0YWphL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/NaplatnaPostaja/Edit(deprecated).cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmFwbGF0bmFQb3N0YWphL0VkaXQoZGVwcmVjYXRlZCkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/NaplatnaPostaja/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmFwbGF0bmFQb3N0YWphL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/NaplatnaPostaja/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmFwbGF0bmFQb3N0YWphL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/NaplatnaPostaja/NovaStavkaTemplate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmFwbGF0bmFQb3N0YWphL05vdmFTdGF2a2FUZW1wbGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/NaplatnaPostaja/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmFwbGF0bmFQb3N0YWphL1Nob3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/NaplatnaPostaja/StavkeCjenika.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmFwbGF0bmFQb3N0YWphL1N0YXZrZUNqZW5pa2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Obavijest/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2JhdmlqZXN0L0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Obavijest/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2JhdmlqZXN0L0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Obavijest/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2JhdmlqZXN0L0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Obavijest/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2JhdmlqZXN0L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Objekt/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2JqZWt0L0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Objekt/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2JqZWt0L0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Objekt/Get.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2JqZWt0L0dldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Objekt/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2JqZWt0L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Odmorista/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2Rtb3Jpc3RhL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Odmorista/CreateSadrzaj.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2Rtb3Jpc3RhL0NyZWF0ZVNhZHJ6YWouY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Odmorista/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2Rtb3Jpc3RhL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Odmorista/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2Rtb3Jpc3RhL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Odmorista/EditSadrzaj.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2Rtb3Jpc3RhL0VkaXRTYWRyemFqLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Odmorista/GetSadrzaj.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2Rtb3Jpc3RhL0dldFNhZHJ6YWouY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Odmorista/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2Rtb3Jpc3RhL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/OdrzavanjeObjekta/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2RyemF2YW5qZU9iamVrdGEvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/OdrzavanjeObjekta/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2RyemF2YW5qZU9iamVrdGEvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/OdrzavanjeObjekta/Get.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2RyemF2YW5qZU9iamVrdGEvR2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/OdrzavanjeObjekta/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2RyemF2YW5qZU9iamVrdGEvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/ParkGospVoz/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFya0dvc3BWb3ovQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/ParkGospVoz/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFya0dvc3BWb3ovRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/ParkGospVoz/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFya0dvc3BWb3ovSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/PetarReports/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV0YXJSZXBvcnRzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Report/IndexHruza.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0luZGV4SHJ1emEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Report/IndexMacan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0luZGV4TWFjYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Report/IndexVrsalovic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0luZGV4VnJzYWxvdmljLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Shared/HandleMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0hhbmRsZU1lc3NhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Shared/IncludeValidation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0luY2x1ZGVWYWxpZGF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Shared/_Nav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19OYXYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Slike/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2xpa2UvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Slike/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2xpa2UvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Slike/Get.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2xpa2UvR2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Slike/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2xpa2UvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/TipSadrzaja/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwU2FkcnphamEvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/TipSadrzaja/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwU2FkcnphamEvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/TipSadrzaja/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwU2FkcnphamEvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/TipSadrzaja/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwU2FkcnphamEvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/ViewLog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlld0xvZy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/ViewLog/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlld0xvZy9TaG93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

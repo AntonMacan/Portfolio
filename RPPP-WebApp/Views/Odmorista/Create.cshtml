@@ -1,0 +1,98 @@
+﻿@model RPPP_WebApp.Models.Odmoriste
+
+@{
+    ViewBag.Title = "Novo odmorište";
+}
+
+<h2>Dodaj novo odmorište</h2>
+
+<form asp-action="Create" method="post">
+    <div asp-validation-summary="All"></div>
+
+
+
+
+    <div class="form-group">
+        @*
+        <label asp-for="Dionica"></label>
+        <div><span asp-validation-for="DionicaId" class="text-danger"></span></div>
+        <select class="form-control" asp-for="DionicaId" asp-items="ViewBag.Dionice">
+            <option disabled selected value="">Odaberite dionicu</option>
+        </select>
+        *@
+        <label asp-for="NazivDionice" class="col-sm-2 col-form-label">Dionica</label>
+        <input asp-for="NazivDionice" class="form-control" data-autocomplete="dionica"
+               data-autocomplete-placeholder-name="Dionica"/>
+        <input type="hidden" asp-for="DionicaId" data-autocomplete-placeholder="Dionica" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Naziv"></label>
+        <div><span asp-validation-for="Naziv" class="text-danger"></span></div>
+        <input asp-for="Naziv" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="StacionazaKm"></label>
+        <div><span asp-validation-for="StacionazaKm" class="text-danger"></span></div>
+        <input asp-for="StacionazaKm" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="StacionazaM"></label>
+        <div><span asp-validation-for="StacionazaM" class="text-danger"></span></div>
+        <input asp-for="StacionazaM" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Smjer"></label>
+        <div><span asp-validation-for="Smjer" class="text-danger"></span></div>
+        <input asp-for="Smjer" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="GeografskaDuzina"></label>
+        <div><span asp-validation-for="GeografskaDuzina" class="text-danger"></span></div>
+        <input asp-for="GeografskaDuzina" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="GeografskaSirina"></label>
+        <div><span asp-validation-for="GeografskaSirina" class="text-danger"></span></div>
+        <input asp-for="GeografskaSirina" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NadmorskaVisina"></label>
+        <div><span asp-validation-for="NadmorskaVisina" class="text-danger"></span></div>
+        <input asp-for="NadmorskaVisina" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Opis"></label>
+        <div><span asp-validation-for="Opis" class="text-danger"></span></div>
+        <input asp-for="Opis" class="form-control" />
+    </div>
+
+
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Dodaj</button>
+        <a asp-action="Index" class="btn btn-default">Odustani</a>
+    </div>
+</form>
+
+@section styles{
+    <link rel="stylesheet" href="~/lib/jqueryui/themes/base/jquery-ui.css" />
+}
+
+@section scripts {
+    <partial name="IncludeValidation" />
+    <script>
+        /*overwritea metodu iz jqueryja kako bi iz forme mogli poslati decimalne
+        brojeve sa zarezima na server*/
+        $.validator.methods.number = function (value, element) {
+            return this.optional(element) || /^-?(?:\d+|\d{1,3}(?:\.\d{3})+)?(?:,\d+)?$/.test(value);
+        }
+    </script>
+    <script src="~/lib/jqueryui/jquery-ui.js"></script>
+    <script src="~/js/autocomplete.js" asp-append-version="true"></script>
+}

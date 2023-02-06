@@ -1,0 +1,548 @@
+2023-01-13 16:46:29.9205|0|DEBUG|Program|init main 
+2023-01-13 16:46:30.7352|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 16:46:30.7699|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 16:46:30.7769|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 16:46:30.7769|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 16:46:30.7799|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 16:46:52.3058|20102|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Datum], [f].[DionicaId], [f].[GeografskaDuzina], [f].[GeografskaSirina], [f].[KameraId], [f].[Naziv], [f].[Smjer], [f].[Url]
+FROM [dbo].[fn_Slike]() AS [f]
+ORDER BY [f].[KameraId], [f].[Datum] 
+2023-01-13 16:46:52.5217|10100|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'RPPP_WebApp.Models.RPPP05Context'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DionicaId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:0412cb9a-1669-4a26-a2ec-a6ce4ec43336
+Error Number:207,State:1,Class:16 Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DionicaId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:0412cb9a-1669-4a26-a2ec-a6ce4ec43336
+Error Number:207,State:1,Class:16
+2023-01-13 16:46:52.6313|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DionicaId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at RPPP_WebApp.Controllers.ReportController.Kamera() in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/ReportController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:0412cb9a-1669-4a26-a2ec-a6ce4ec43336
+Error Number:207,State:1,Class:16
+2023-01-13 16:47:29.0277|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 16:47:40.1489|0|DEBUG|Program|init main 
+2023-01-13 16:47:40.8943|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 16:47:40.9229|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 16:47:40.9304|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 16:47:40.9324|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 16:47:40.9324|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 16:47:49.0533|10100|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'RPPP_WebApp.Models.RPPP05Context'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method53(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method53(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-01-13 16:47:49.1550|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method53(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at RPPP_WebApp.Controllers.ReportController.Kamera() in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/ReportController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-13 16:48:01.7337|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 16:48:11.6359|0|DEBUG|Program|init main 
+2023-01-13 16:48:12.2750|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 16:48:12.3034|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 16:48:12.3090|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 16:48:12.3090|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 16:48:12.3115|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 16:48:20.0929|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.IO.DirectoryNotFoundException: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/wwwroot/fonts directory does not exist.
+   at PdfRpt.Core.Helper.Guard.CheckDirectoryExists(String fileName)
+   at PdfRpt.GenericFontProvider..ctor(String mainFontPath, String defaultFontPath)
+   at PdfRpt.FluentInterface.DataTemplate.setDefaultPdfFonts()
+   at PdfRpt.FluentInterface.DataTemplate.get_PdfFont()
+   at PdfRpt.FluentInterface.PagesFooterBuilder..ctor(PdfReport pdfReport)
+   at PdfRpt.FluentInterface.PdfReport.PagesFooter(Action`1 pagesFooterBuilder)
+   at RPPP_WebApp.Controllers.ReportController.Kamera() in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/ReportController.cs:line 85
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-13 16:51:13.8718|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 16:51:24.0913|0|DEBUG|Program|init main 
+2023-01-13 16:51:25.1772|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 16:51:25.2048|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 16:51:25.2101|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 16:51:25.2127|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 16:51:25.2127|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 16:51:38.5642|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.IO.DirectoryNotFoundException: /wwroot/fonts directory does not exist.
+   at PdfRpt.Core.Helper.Guard.CheckDirectoryExists(String fileName)
+   at PdfRpt.GenericFontProvider..ctor(String mainFontPath, String defaultFontPath)
+   at PdfRpt.FluentInterface.DataTemplate.setDefaultPdfFonts()
+   at PdfRpt.FluentInterface.DataTemplate.get_PdfFont()
+   at PdfRpt.FluentInterface.PagesFooterBuilder..ctor(PdfReport pdfReport)
+   at PdfRpt.FluentInterface.PdfReport.PagesFooter(Action`1 pagesFooterBuilder)
+   at RPPP_WebApp.Controllers.ReportController.Kamera() in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/ReportController.cs:line 85
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-13 16:54:09.1792|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 16:54:31.8325|0|DEBUG|Program|init main 
+2023-01-13 16:54:32.4863|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 16:54:32.5155|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 16:54:32.5218|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 16:54:32.5237|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 16:54:32.5237|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 16:54:57.9985|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.IO.DirectoryNotFoundException: /wwroot/fonts directory does not exist.
+   at PdfRpt.Core.Helper.Guard.CheckDirectoryExists(String fileName)
+   at PdfRpt.GenericFontProvider..ctor(String mainFontPath, String defaultFontPath)
+   at PdfRpt.FluentInterface.DataTemplate.setDefaultPdfFonts()
+   at PdfRpt.FluentInterface.DataTemplate.get_PdfFont()
+   at PdfRpt.FluentInterface.PagesFooterBuilder..ctor(PdfReport pdfReport)
+   at PdfRpt.FluentInterface.PdfReport.PagesFooter(Action`1 pagesFooterBuilder)
+   at RPPP_WebApp.Controllers.ReportController.Kamera() in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/ReportController.cs:line 93
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-13 16:55:16.5071|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 16:55:24.2776|0|DEBUG|Program|init main 
+2023-01-13 16:55:24.8925|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 16:55:24.9213|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 16:55:24.9270|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 16:55:24.9285|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 16:55:24.9285|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 16:55:32.7993|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.IO.DirectoryNotFoundException: /wwroot/fonts directory does not exist.
+   at PdfRpt.Core.Helper.Guard.CheckDirectoryExists(String fileName)
+   at PdfRpt.GenericFontProvider..ctor(String mainFontPath, String defaultFontPath)
+   at PdfRpt.FluentInterface.DataTemplate.setDefaultPdfFonts()
+   at PdfRpt.FluentInterface.DataTemplate.get_PdfFont()
+   at PdfRpt.FluentInterface.PagesFooterBuilder..ctor(PdfReport pdfReport)
+   at PdfRpt.FluentInterface.PdfReport.PagesFooter(Action`1 pagesFooterBuilder)
+   at RPPP_WebApp.Controllers.ReportController.Kamera() in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/ReportController.cs:line 86
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-13 16:59:47.4068|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 16:59:56.1930|0|DEBUG|Program|init main 
+2023-01-13 16:59:57.3863|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 16:59:57.4157|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 16:59:57.4218|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 16:59:57.4240|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 16:59:57.4240|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 17:00:02.6260|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.IO.DirectoryNotFoundException: /wwroot/fonts directory does not exist.
+   at PdfRpt.Core.Helper.Guard.CheckDirectoryExists(String fileName)
+   at PdfRpt.GenericFontProvider..ctor(String mainFontPath, String defaultFontPath)
+   at PdfRpt.FluentInterface.DataTemplate.setDefaultPdfFonts()
+   at PdfRpt.FluentInterface.DataTemplate.get_PdfFont()
+   at PdfRpt.FluentInterface.PagesFooterBuilder..ctor(PdfReport pdfReport)
+   at PdfRpt.FluentInterface.PdfReport.PagesFooter(Action`1 pagesFooterBuilder)
+   at RPPP_WebApp.Controllers.ReportController.Kamera() in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/ReportController.cs:line 86
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-13 17:00:44.9245|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 17:00:52.9712|0|DEBUG|Program|init main 
+2023-01-13 17:00:53.5980|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 17:00:53.6278|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 17:00:53.6337|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 17:00:53.6337|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 17:00:53.6363|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 17:01:01.0037|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.IO.DirectoryNotFoundException: /wwwroot/fonts directory does not exist.
+   at PdfRpt.Core.Helper.Guard.CheckDirectoryExists(String fileName)
+   at PdfRpt.GenericFontProvider..ctor(String mainFontPath, String defaultFontPath)
+   at PdfRpt.FluentInterface.DataTemplate.setDefaultPdfFonts()
+   at PdfRpt.FluentInterface.DataTemplate.get_PdfFont()
+   at PdfRpt.FluentInterface.PagesFooterBuilder..ctor(PdfReport pdfReport)
+   at PdfRpt.FluentInterface.PdfReport.PagesFooter(Action`1 pagesFooterBuilder)
+   at RPPP_WebApp.Controllers.ReportController.Kamera() in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/ReportController.cs:line 86
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-13 17:01:50.2704|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 17:01:58.6251|0|DEBUG|Program|init main 
+2023-01-13 17:01:59.2336|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 17:01:59.2672|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 17:01:59.2731|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 17:01:59.2731|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 17:01:59.2731|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 17:03:46.9163|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 17:03:54.7496|0|DEBUG|Program|init main 
+2023-01-13 17:03:55.3758|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 17:03:55.4114|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 17:03:55.4170|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 17:03:55.4170|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 17:03:55.4170|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 17:05:05.3006|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 17:05:13.6387|0|DEBUG|Program|init main 
+2023-01-13 17:05:14.3661|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 17:05:14.4134|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 17:05:14.4236|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 17:05:14.4236|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 17:05:14.4276|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 17:06:06.3258|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 17:07:00.9341|0|DEBUG|Program|init main 
+2023-01-13 17:07:01.6025|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 17:07:01.6341|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 17:07:01.6398|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 17:07:01.6398|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 17:07:01.6398|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 17:07:36.2859|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 17:43:22.0996|0|DEBUG|Program|init main 
+2023-01-13 17:43:24.5370|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 17:43:24.5796|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 17:43:24.5874|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 17:43:24.5874|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 17:43:24.5874|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 17:47:22.1850|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 17:47:32.4992|0|DEBUG|Program|init main 
+2023-01-13 17:47:33.3526|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 17:47:33.3946|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 17:47:33.4035|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 17:47:33.4035|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 17:47:33.4035|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 17:47:33.8692|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 17:48:08.4918|0|DEBUG|Program|init main 
+2023-01-13 17:48:09.1500|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 17:48:09.1790|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 17:48:09.1845|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 17:48:09.1845|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 17:48:09.1845|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 17:50:25.5551|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 17:50:34.6965|0|DEBUG|Program|init main 
+2023-01-13 17:50:35.3679|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 17:50:35.3973|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 17:50:35.4032|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 17:50:35.4047|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 17:50:35.4047|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 17:51:56.9104|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 17:52:06.2248|0|DEBUG|Program|init main 
+2023-01-13 17:52:07.0281|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 17:52:07.0573|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 17:52:07.0628|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 17:52:07.0644|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 17:52:07.0644|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 17:52:57.1950|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 17:53:08.8223|0|DEBUG|Program|init main 
+2023-01-13 17:53:09.6461|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 17:53:09.6752|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 17:53:09.6809|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 17:53:09.6809|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 17:53:09.6840|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 17:54:47.7215|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 17:54:59.7788|0|DEBUG|Program|init main 
+2023-01-13 17:55:00.6405|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 17:55:00.6711|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 17:55:00.6794|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 17:55:00.6794|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 17:55:00.6794|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 17:55:26.3647|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 18:45:20.2311|0|DEBUG|Program|init main 
+2023-01-13 18:45:21.0965|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 18:45:21.1342|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 18:45:21.1418|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 18:45:21.1526|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 18:45:21.1526|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 18:50:45.1241|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 18:50:57.9859|0|DEBUG|Program|init main 
+2023-01-13 18:50:58.7398|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 18:50:58.7684|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 18:50:58.7741|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 18:50:58.7763|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 18:50:58.7763|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 18:51:45.2642|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 18:51:53.5242|0|DEBUG|Program|init main 
+2023-01-13 18:51:54.1117|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 18:51:54.1397|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 18:51:54.1454|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 18:51:54.1454|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 18:51:54.1479|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 18:52:42.5565|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 22:50:41.7976|0|DEBUG|Program|init main 
+2023-01-13 22:50:42.5946|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 22:50:42.6320|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 22:50:42.6395|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 22:50:42.6395|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 22:50:42.6426|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 22:51:14.3188|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at RPPP_WebApp.Controllers.ReportController.KameraExcel() in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/ReportController.cs:line 176
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-13 22:53:22.0021|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 22:53:37.5004|0|DEBUG|Program|init main 
+2023-01-13 22:53:38.2293|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 22:53:38.2687|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 22:53:38.2774|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 22:53:38.2804|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 22:53:38.2819|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 22:54:09.1036|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at RPPP_WebApp.Controllers.ReportController.KameraExcel() in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/ReportController.cs:line 175
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-13 22:54:48.3799|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 22:56:17.8399|0|DEBUG|Program|init main 
+2023-01-13 22:56:18.5975|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 22:56:18.6276|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 22:56:18.6339|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 22:56:18.6339|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 22:56:18.6339|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 22:56:27.9804|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at RPPP_WebApp.Controllers.ReportController.KameraExcel() in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/ReportController.cs:line 183
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-13 22:56:54.1308|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 22:57:03.7772|0|DEBUG|Program|init main 
+2023-01-13 22:57:04.4056|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 22:57:04.4365|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 22:57:04.4427|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 22:57:04.4427|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 22:57:04.4427|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 22:57:52.6383|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 23:10:50.3035|0|DEBUG|Program|init main 
+2023-01-13 23:10:51.1439|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 23:10:51.1725|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 23:10:51.1781|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 23:10:51.1781|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 23:10:51.1781|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 23:11:06.4268|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 23:11:17.5571|0|DEBUG|Program|init main 
+2023-01-13 23:11:18.2653|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 23:11:18.2949|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 23:11:18.3008|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 23:11:18.3029|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 23:11:18.3029|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 23:13:54.3341|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 23:14:04.0903|0|DEBUG|Program|init main 
+2023-01-13 23:14:04.7684|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 23:14:04.7965|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 23:14:04.8020|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 23:14:04.8020|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 23:14:04.8020|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 23:14:52.1236|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 23:30:28.7876|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 23:30:28.8614|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 23:30:28.8685|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 23:30:28.8727|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 23:30:28.8738|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 23:31:41.4389|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 23:33:31.0090|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 23:33:31.0878|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 23:33:31.0953|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 23:33:31.1334|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 23:33:31.1356|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 23:34:06.8845|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 23:34:21.0609|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 23:34:21.1234|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 23:34:21.1300|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 23:34:21.1355|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 23:34:21.1355|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 23:34:26.0132|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Cannot override the 'href' attribute for <a>. An <a> with a specified 'href' must not have attributes starting with 'asp-route-' or an 'asp-action', 'asp-controller', 'asp-area', 'asp-route', 'asp-protocol', 'asp-host', 'asp-fragment', 'asp-page' or 'asp-page-handler' attribute.
+   at Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCoreGeneratedDocument.Views_Shared__Nav.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.<ExecuteAsync>b__23_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-13 23:34:46.0893|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 23:34:57.0956|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 23:34:57.1578|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 23:34:57.1644|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 23:34:57.1685|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 23:34:57.1685|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 23:35:24.9836|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-13 23:35:39.9387|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-13 23:35:40.0010|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-13 23:35:40.0079|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-13 23:35:40.0112|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-13 23:35:40.0112|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-13 23:35:51.5364|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 

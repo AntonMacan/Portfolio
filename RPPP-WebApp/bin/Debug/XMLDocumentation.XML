@@ -1,0 +1,1324 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RPPP-WebApp</name>
+    </assembly>
+    <members>
+        <member name="T:RPPP_WebApp.Controllers.AutocestaController">
+            <summary>
+            Kontroler za autoceste
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutocestaController.Index(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Vraca tablicu s autocestama
+            </summary>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">rastuce sortiranje</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutocestaController.Create">
+            <summary>
+            Vraca stranicu za stvaranje nove autoceste
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutocestaController.FillDropdownKoncesionari">
+            <summary>
+            Pomocna metoda koja priprema select listu koncesionara
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutocestaController.Create(RPPP_WebApp.Models.Autoceste)">
+            <summary>
+            Obrađuje post zahtjev za novom autocestom
+            </summary>
+            <param name="autocesta">nova autocesta</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutocestaController.Edit(System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Vraca stranicu za uredivanje autoceste
+            </summary>
+            <param name="oznaka">autocesta koja se ureduje</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">rastuce sortiranje</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutocestaController.Update(System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Obraduje post zahtjev za izmjenu autoceste
+            </summary>
+            <param name="oznaka">autocesta koja je uredena</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">rastuce sortiranje</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutocestaController.Delete(System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Brise autocestu
+            </summary>
+            <param name="oznaka">oznaka autoceste koja se brise</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">rastuce sortiranje</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutocestaController.Details(System.String)">
+            <summary>
+            Vraca stranicu s detaljima autoceste
+            </summary>
+            <param name="oznaka">oznaka autoceste</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutocestaController.EditDionica(System.Int32)">
+            <summary>
+            Vraca parcijalni pogled za uredivanje dionice u detail-u master forme
+            </summary>
+            <param name="id">id dionice</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutocestaController.EditDionica(RPPP_WebApp.Models.Dionice)">
+            <summary>
+            Obraduje post zahtjev za izmjenom dionice u detail-u master forme
+            </summary>
+            <param name="dionica"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutocestaController.GetDionice(System.Int32)">
+            <summary>
+            Vraca parcijalni pogled dionice za detail u master formi
+            </summary>
+            <param name="id">id dionice</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutocestaController.DeleteDionica(System.Int32)">
+            <summary>
+            Brise stavku iz dionice iz master forme
+            </summary>
+            <param name="id">id dionice</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutocestaController.CreateDionica(RPPP_WebApp.Models.Dionice)">
+            <summary>
+            Stvara novu stavku dionice u master formi
+            </summary>
+            <param name="dionica">Dionica koja se stvara</param>
+            <returns></returns>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.AutoCompleteController">
+            <summary>
+            Web API servis za automatsko ispunjavanje liste sa objektima koji sadrze odredenu rijec
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutoCompleteController.Kamera(System.String)">
+            <summary>
+            Vraća listu svih kamera koje u nazivu sadrze odredenu rijec
+            </summary>
+            <param name="term">Rijec koja je u nazivu koji trazimo</param>
+            <returns>Vraca listu IdLabel objekata</returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutoCompleteController.Dionica(System.String)">
+            <summary>
+            Vraća listu svih dionica koje u nazivu sadrze odredenu rijec
+            </summary>
+            <param name="term">Rijec koja je u nazivu koji trazimo</param>
+            <returns>Vraca listu IdLabel objekata</returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutoCompleteController.Objekt(System.String)">
+            <summary>
+            Vraća listu svih objekata koji u nazivu sadrze odredenu rijec
+            </summary>
+            <param name="term">Rijec koja je u nazivu koji trazimo</param>
+            <returns>Vraca listu IdLabel objekata</returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.AutoCompleteController.Tip(System.String)">
+            <summary>
+            Vraća listu svih tipova odrzavanja koji u nazivu sadrze odredenu rijec
+            </summary>
+            <param name="term">Rijec koja je u nazivu koji trazimo</param>
+            <returns>Vraca listu IdLabel objekata</returns>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.DionicaController">
+            <summary>
+            Kontroler za dionice
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.DionicaController.Index(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Vraca tablicu dionica
+            </summary>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">rastuce</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.DionicaController.Create">
+            <summary>
+            Vraca stranicu za stvaranje nove dionice
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.DionicaController.Create(RPPP_WebApp.Models.Dionice)">
+            <summary>
+            Stvara novu dionicu
+            </summary>
+            <param name="dionica"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.DionicaController.Edit(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Vraca stranicu za uredivanje dionica
+            </summary>
+            <param name="id">id dionice</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">rastuce</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.DionicaController.Update(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Ureduje dionicu
+            </summary>
+            <param name="id">id dionice</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">rastuce</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.DionicaController.Delete(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Brise dionicu
+            </summary>
+            <param name="id">id dionice</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">rastuce</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.DionicaController.Details(System.Nullable{System.Int32})">
+            <summary>
+            Vraca detalje dionice
+            </summary>
+            <param name="id">id dionice</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.DionicaController.FillDropdown">
+            <summary>
+            Pomocna metoda za pripremu select liste
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.DionicaController.FillDropdownAutocesta">
+            <summary>
+            Pomocna metoda za pripremu select liste autocesta
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.DionicaController.FillDropdownNaplatne">
+            <summary>
+            Pomocna metoda za pripremu select liste naplatnih postaji
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.DionicaController.FixAutocestaDuljina(System.String)">
+            <summary>
+            Pomocna metoda za korekciju duljine autoceste
+            </summary>
+            <param name="oznaka"></param>
+            <returns></returns>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.EncpostajaController">
+            <summary>
+            Kontroler zadužen za ENC postaje
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.EncpostajaController.Index(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Priprema podatak za prikaz ENC naplatnig postaja
+            </summary>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">način sortiranja</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.EncpostajaController.Create">
+            <summary>
+            Pogled za fromu dodavanja nove ENC postaje
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.EncpostajaController.Create(RPPP_WebApp.Models.Encpostaja)">
+            <summary>
+            Obavlja provjeru i dodavanje modela ENC postaje u bazu
+            </summary>
+            <param name="postaja">model ENC postaje iz forme</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.EncpostajaController.Edit(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Prikaz forme za ažuriranje podataka ENC postaje
+            </summary>
+            <param name="id">identifikator postaje</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">način sortiranja</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.EncpostajaController.Edit(RPPP_WebApp.Models.Encpostaja,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Provjerava podatke i sprema ažuriranu ENC postaju u bazu
+            </summary>
+            <param name="postaja">model ažurirane postaje</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">način sortiranja</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.EncpostajaController.Delete(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Obavlja brisanje postaje iz baze
+            </summary>
+            <param name="id">identifikator postaje</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">način sortiranja</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.EncpostajaController.PrepareDropDownList">
+            <summary>
+            Priprema padajuću listu za naplatne postaje
+            Ne koristi se jer se koristi autocomplete
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.KameraController">
+            <summary>
+            Web API servis za rad sa kamerama
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.KameraController.Index(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Vraća početnu stranicu sa listom svih kamera
+            </summary>
+            <param name="page">Broj željene stranice</param>
+            <param name="sort">Index stupca po kojem želi se sortirat</param>
+            <param name="ascending">Je li uzlazno ili silazno sortiranje?</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.KameraController.Create">
+            <summary>
+            Vraća formu za unos nove kamere
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.KameraController.Create(RPPP_WebApp.ViewModels.KameraViewModel)">
+            <summary>
+            Stvara novu kameru sa poslanim opisom
+            </summary>
+            <param name="kamera"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.KameraController.Delete(System.Int32)">
+            <summary>
+            Brisanje kamere određenog s id
+            </summary>
+            <param name="id">Vrijednost primarnog ključa (Id kamere)</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.KameraController.Edit(System.Int32)">
+            <summary>
+            Vraća formu za ažuriranje kamere
+            </summary>
+            <param name="id">Id kamere</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.KameraController.Edit(RPPP_WebApp.Models.Kamere)">
+            <summary>
+            Ažurira kameru
+            </summary>
+            <param name="kamera">Podaci o kameri</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.KameraController.Get(System.Int32)">
+            <summary>
+            Vraća kameru čiji je Id jednak vrijednosti parametra id
+            </summary>
+            <param name="id">IdKamere</param>
+            <returns></returns>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.KoncesionarController">
+            <summary>
+            Kontroler za koncesionare
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.KoncesionarController.Index(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Vraca stranicu koncesionara
+            </summary>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">rastuce</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.KoncesionarController.Create">
+            <summary>
+            Vraca stranicu za stvaranje novog koncesionara
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.KoncesionarController.Create(RPPP_WebApp.Models.Koncesionari)">
+            <summary>
+            Stvara novog koncesionara
+            </summary>
+            <param name="koncesionar"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.KoncesionarController.Edit(System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Vraca stranicu za uredivanje koncesionara
+            </summary>
+            <param name="naziv">naziv koncesionara</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">rastuce</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.KoncesionarController.Update(System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Obraduje zahtjev za uredivanjem koncesionara
+            </summary>
+            <param name="naziv">naziv koncesionara</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">rastuce</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.KoncesionarController.Delete(System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Brise koncesionara
+            </summary>
+            <param name="naziv">naziv koncesionara</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">rastuce</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.KoncesionarController.Details(System.String)">
+            <summary>
+            Vraca detalje koncesionara
+            </summary>
+            <param name="naziv">naziv koncesionara</param>
+            <returns></returns>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.MultimedijaController">
+            <summary>
+            Servis za rad s multimedijom
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.MultimedijaController.Create(System.Int32)">
+            <summary>
+            Vraca stranicu s formom za unos novog multimedijskog sadrzaja
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.MultimedijaController.Create(RPPP_WebApp.Models.Multimedija)">
+            <summary>
+            Obraduje post zahtjev za unos novog multimedijskog sadrzaja
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.MultimedijaController.Edit(System.Nullable{System.Int32},System.Int32)">
+            <summary>
+            Vraca stranicu s formom za azuriranje multimedijskog sadrzaja
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.MultimedijaController.Edit(System.Int32,RPPP_WebApp.Models.Multimedija)">
+            <summary>
+            Obraduje post zahtjev za azuriranje multimedijskog sadrzaja
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.MultimedijaController.Delete(System.Nullable{System.Int32})">
+            <summary>
+            Vraca stranicu sa potvrdom brisanja multimedijskog sadrzaja
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.MultimedijaController.DeleteConfirmed(System.Int32)">
+            <summary>
+            Obraduje zahtjev za brisanje multimedijskog sadrzaja
+            </summary>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.NaplatnaPostajaController">
+            <summary>
+            Kontroler zadužen za naplatne postaje
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.NaplatnaPostajaController.Index(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Priprema i prikazuje stranicu s tablicom naplatnih postaja
+            </summary>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">način sortiranja</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.NaplatnaPostajaController.Create">
+            <summary>
+            Ruta za pogled forme za dodavanj naplatne postaje
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.NaplatnaPostajaController.Create(RPPP_WebApp.Models.NaplatnaPostaja)">
+            <summary>
+            Stvara novu postaju iz poslanog modela iz forme
+            Sprema ju u bazu
+            </summary>
+            <param name="postaja">model postaje</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.NaplatnaPostajaController.Edit(System.Int32,System.Nullable{System.Int32},System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Prikazuje stranicu za dodavanje i ažuriranje stavki cjenika naplatne postaje
+            </summary>
+            <param name="id">identifikator naplatne postaje</param>
+            <param name="position">pozicija trenutnog dokumenta u navigacijskoj listi</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">način sortiranja</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.NaplatnaPostajaController.Edit(RPPP_WebApp.ViewModels.NaplatnaPostajaDetailView,System.Nullable{System.Int32},System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Sprema promjene u bazu nastale u formi za ažuriranje i unos stavki cjenika nalpatne postaje
+            </summary>
+            <param name="model">model naplatne postaje i njezinih stavki cjenika</param>
+            <param name="position">pozicija trenutnog dokumenta u navigacijskoj listi</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">način sortiranja</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.NaplatnaPostajaController.Delete(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Obavlja birsanje naplatne postaje iz baze
+            </summary>
+            <param name="id">identifikator baze</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">način sortiranja</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.NaplatnaPostajaController.Show(System.Int32,System.Nullable{System.Int32},System.Int32,System.Int32,System.Boolean,System.String)">
+            <summary>
+            Priprema i prikazuje naplatnu postaju i njezine stavke te navigaciju izmežu nalpatnih postaja
+            </summary>
+            <param name="id">identifikator naplatne postaje</param>
+            <param name="position">pozicija trenutnog dokumenta u navigacijskoj listi</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">način sortiranja</param>
+            <param name="viewName">ime pogleda</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.NaplatnaPostajaController.SetPreviousAndNext(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Računa pozicije naplatnih postaja u navigacijskoj listi
+            </summary>
+            <param name="position">pozicija u navigacijskoj listi</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">način sortiranja</param>
+            <returns></returns>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.ObavijestController">
+            <summary>
+            Kontroler za obavijesti
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ObavijestController.Index(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Vraca stranicu s obavijestima
+            </summary>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">rastuce</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ObavijestController.Create">
+            <summary>
+            Vraca stranicu za unos nove obavijesti
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ObavijestController.Create(RPPP_WebApp.Models.Obavijesti)">
+            <summary>
+            Stvara novu obavijest
+            </summary>
+            <param name="obavijest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ObavijestController.Edit(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Vraca stranicu za uredivanje Obavijesti
+            </summary>
+            <param name="id">id obavijesti</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">rastuce</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ObavijestController.Update(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            ureduje obavijest
+            </summary>
+            <param name="id">id obavijesti</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">rastuce</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ObavijestController.Delete(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Brise obavijest
+            </summary>
+            <param name="id">id obavijesti</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">rastuce</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ObavijestController.Details(System.Nullable{System.Int32})">
+            <summary>
+            Vraca stranicu s detaljima obavijesti
+            </summary>
+            <param name="id">id obavijesti</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ObavijestController.FillDropdownDionice">
+            <summary>
+            Pomocna metoda za pripremu select liste dionica
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.ObjektController">
+            <summary>
+            Web API servis za rad sa objektima
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ObjektController.Index(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Vraća početnu stranicu sa listom svih objekata
+            </summary>
+            <param name="page">Broj željene stranice</param>
+            <param name="sort">Index stupca po kojem želi se sortirat</param>
+            <param name="ascending">Je li uzlazno ili silazno sortiranje?</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ObjektController.Create">
+            <summary>
+            Vraća formu za unos novog objekta
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ObjektController.Create(RPPP_WebApp.ViewModels.ObjektViewModel)">
+            <summary>
+            Stvara novi objekt sa poslanim opisom
+            </summary>
+            <param name="objekt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ObjektController.Delete(System.Int32)">
+            <summary>
+            Brisanje objekta određenog s id
+            </summary>
+            <param name="id">Vrijednost primarnog ključa (Id objekta)</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ObjektController.Edit(System.Int32)">
+            <summary>
+            Vraća formu za ažuriranje objekta
+            </summary>
+            <param name="id">Id objekta</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ObjektController.Edit(RPPP_WebApp.Models.Objekt)">
+            <summary>
+            Ažurira objekt
+            </summary>
+            <param name="model">Podaci o objektu</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ObjektController.Get(System.Int32)">
+            <summary>
+            Vraća objekt čiji je Id jednak vrijednosti parametra id
+            </summary>
+            <param name="id">IdObjekta</param>
+            <returns></returns>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.OdmoristaController">
+            <summary>
+            Servis za rad s odmoristima i sadrzajima odmorista
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdmoristaController.Index(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Vraća stranicu sa listom svih odmorista
+            </summary>
+            <param name="page">Broj željene stranice</param>
+            <param name="sort">Index stupca po kojem želi se sortirat</param>
+            <param name="ascending">Je li uzlazno ili silazno sortiranje?</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdmoristaController.Details(System.Nullable{System.Int32},System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Vraća stranicu sa detaljima odabranog odmorista,
+            listom sadrzaja odmorista, i listom poveznica na multimedijske sadrzaje vezane uz 
+            odabrano odmoriste
+            </summary>
+            <param name="id">Id odmorista koje ce se prikazati</param>
+            <param name="page">Broj željene stranice</param>
+            <param name="sort">Index stupca po kojem želi se sortirat</param>
+            <param name="ascending">Je li uzlazno ili silazno sortiranje?</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdmoristaController.Create">
+            <summary>
+            Vraca stranicu za unos novog odmorista
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdmoristaController.Create(RPPP_WebApp.Models.Odmoriste)">
+            <summary>
+            Obraduje post zahtjev i dodaje novo odmoriste u bazu
+            </summary>
+            <param name="odmoriste"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:RPPP_WebApp.Controllers.OdmoristaController.Edit(System.Nullable{System.Int32},System.Int32,System.Int32,System.Boolean)" -->
+        <member name="M:RPPP_WebApp.Controllers.OdmoristaController.Update(System.Int32,RPPP_WebApp.Models.Odmoriste,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Obraduje post zahtjev za azuriranje odmorista
+            </summary>
+            <param name="id">Id odmorista</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdmoristaController.Delete(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Brisanje odmorista određenog s id
+            </summary>
+            <param name="ascending"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdmoristaController.EditSadrzaj(System.Int32)">
+            <summary>
+            Vraca parcijalni pogled za uredivanje sadrzaja odmorista
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdmoristaController.EditSadrzaj(RPPP_WebApp.Models.Sadrzaj)">
+            <summary>
+            Obraduje post zahtjev za uredivanje sadrzaja odmorista
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdmoristaController.CreateSadrzaj(System.Int32)">
+            <summary>
+            Vraca parcijalni pogled za dodavanje novog sadrzaja odmorista
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdmoristaController.CreateSadrzaj(RPPP_WebApp.Models.Sadrzaj)">
+            <summary>
+            Obraduje post zahtjev za dodavanje novog sadrzaja odmorista
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdmoristaController.GetSadrzaj(System.Int32)">
+            <summary>
+            Vraca parcijalni pogled za prikaz podataka o sadrzaju odmorista
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdmoristaController.DeleteSadrzaj(System.Int32)">
+            <summary>
+            Obraduje zahtjev za brisanje sadrzaja sodredenog s id
+            </summary>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.OdrzavanjeObjektaController">
+            <summary>
+            Web API servis za rad sa održavanjima objekata
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdrzavanjeObjektaController.Index(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Vraća početnu stranicu sa listom svih održavanja objekata
+            </summary>
+            <param name="page">Broj željene stranice</param>
+            <param name="sort">Index stupca po kojem želi se sortirat</param>
+            <param name="ascending">Je li uzlazno ili silazno sortiranje?</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdrzavanjeObjektaController.Create">
+            <summary>
+            Vraća formu za unos novog održavanja objekta
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdrzavanjeObjektaController.Create(RPPP_WebApp.ViewModels.OdrzavanjeObjektaViewModel)">
+            <summary>
+            Stvara novo održavanje objekta sa poslanim opisom
+            </summary>
+            <param name="o"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdrzavanjeObjektaController.Delete(System.Int32)">
+            <summary>
+            Brisanje održavanja objekta određenog s id
+            </summary>
+            <param name="id">Vrijednost primarnog ključa (Id održavanja objekta)</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdrzavanjeObjektaController.Edit(System.Int32)">
+            <summary>
+            Vraća formu za ažuriranje održavanja objekta
+            </summary>
+            <param name="id">Id održavanja objekta</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdrzavanjeObjektaController.Edit(RPPP_WebApp.Models.OdrzavanjeObjekta,System.Int32,System.Int32)">
+            <summary>
+            Ažurira održavanje objekta
+            </summary>
+            <param name="odrzavanjeObjekta">Podaci o održavanju objekta</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.OdrzavanjeObjektaController.Get(System.Int32)">
+            <summary>
+            Vraća održavanje objekta čiji je Id jednak vrijednosti parametra id
+            </summary>
+            <param name="id">IdOdržavanjaObjetka</param>
+            <returns></returns>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.ParkGospVozController">
+            <summary>
+            Kontroler za poglede vezane za parkirališta gospodarskih vozila
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ParkGospVozController.Index(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Priprema i prikazuje pogled tablice parkirališta gospodarskih vozila
+            </summary>
+            <param name="page">stranica</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">način sortiranja</param>
+            <returns>Pogled tablice parkirališta gospodarskih vozila</returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ParkGospVozController.Create">
+            <summary>
+            Vraća pogled na formu za dodavanje novog parkirališta
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ParkGospVozController.Create(RPPP_WebApp.Models.ParkGospVoz)">
+            <summary>
+            Obrada POST zahtjeva na formom za dodavanje novog parkirališta
+            </summary>
+            <param name="parkiraliste">Model parkirališta koji se obrađuje</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ParkGospVozController.Delete(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Obrađuje POST zahtjev brisanja parkirališta 
+            </summary>
+            <param name="id">identifikator parkirališta</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">način sortiranja</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ParkGospVozController.Edit(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Priprema i prikazuje stranicu za ažuriranje parkirališta
+            </summary>
+            <param name="id">identifikator parkirališta</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">način sortiranja</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ParkGospVozController.Edit(RPPP_WebApp.Models.ParkGospVoz,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Obrađuje POST zahtjev forme za ažuriranje parkirališta
+            </summary>
+            <param name="parkiraliste">model parkirališta koje se ažurira</param>
+            <param name="page">stranica tablice</param>
+            <param name="sort">stupac sortiranja</param>
+            <param name="ascending">način sortiranja</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ParkGospVozController.PrepareDropDownLists">
+            <summary>
+            Priprema dropdown listu za strane ceste izlaza i stavlja ju u ViewBag
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.PetarReportsController">
+            <summary>
+            Servis za ispis reportova u Excelu i PDF-u 
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.PetarReportsController.OdmoristaExcel">
+            <summary>
+            Vraca excel datoteku s popisom svih odmorista
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.PetarReportsController.OdmoristaSadrzajiExcel">
+            <summary>
+            Vraca excel datoteku s popisom svih odmorista i njihovih sadrzaja 
+            u master detail obliku
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.PetarReportsController.OdmoristeSadrzaji">
+            <summary>
+            Vraca pdf datoteku s popisom svih odmorista i njihovih sadrzaja 
+            u master detail obliku
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.PetarReportsController.MasterDetailsHeaders">
+            <summary>
+            Header za PDF izvješća za naplatne postaje
+            </summary>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.ReportController">
+            <summary>
+            Web API servis za ispis reportova u Excelu i PDF-u 
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ReportController.Kamera">
+            <summary>
+            Vraća PDF file svih kamera i slika
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ReportController.KameraExcel">
+            <summary>
+            Vraća EXCEL file svih kamera i slika
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ReportController.SlikeExcel">
+            <summary>
+            Vraća EXCEL file svih slika
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ReportController.IndexMacan">
+            <summary>
+            Vraća stranicu na kojoj su linkovi za reportove
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ReportController.IndexHruza">
+            <summary>
+            Vraća stranicu na kojoj su linkovi za izvješća člana Fran Hruza
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ReportController.IndexVrsalovic">
+            <summary>
+            Vraca stranicu s linkovima izvjesca clana Josko Vrsalovic
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ReportController.Autoceste">
+            <summary>
+            Vraca pdf s autocestama i dionicama
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ReportController.Naplatne">
+            <summary>
+            Stvara PDF izvješće 20 naplatnih postaja i njihovih cijenika
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.ReportController.MasterDetailsHeadersAutoceste">
+            <summary>
+            header za pdf izvjesca autocesta
+            </summary>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.ReportController.MasterDetailsHeadersNaplatne">
+            <summary>
+            Header za PDF izvješća za naplatne postaje
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ReportController.ParkGospVozExcel">
+            <summary>
+            Stvara Excel tablicu svih parkirališta gospodarskih vozila
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ReportController.AutocesteKoncesionariExcel">
+            <summary>
+            Vraca excel tablicu autocesta i koncesionara
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ReportController.AutocesteDioniceExcel">
+            <summary>
+            Vraca master detail tablicu autocesta i dionica
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.SlikeController">
+            <summary>
+            Web API servis za rad sa slikama
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.SlikeController.Index(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Vraća početnu stranicu sa listom svih slika
+            </summary>
+            <param name="page">Broj željene stranice</param>
+            <param name="sort">Index stupca po kojem želi se sortirat</param>
+            <param name="ascending">Je li uzlazno ili silazno sortiranje?</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.SlikeController.Create">
+            <summary>
+            Vraća formu za unos nove slike
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.SlikeController.Create(RPPP_WebApp.ViewModels.SlikaViewModel)">
+            <summary>
+            Stvara novu sliku sa poslanim opisom
+            </summary>
+            <param name="slika"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.SlikeController.Delete(System.DateTime,System.Int32)">
+            <summary>
+            Brisanje slike određenog s id i date
+            </summary>
+            <param name="date">Vrijednost primarnog ključa (Vrijeme i datum slike)</param>
+            <param name="id">Vrijednost primarnog ključa (Id kamere)</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.SlikeController.Edit(System.DateTime,System.Int32)">
+            <summary>
+            Vraća formu za ažuriranje slike
+            </summary>
+            <param name="id">Id kamere</param>
+            <param name="date">Datum i vrijeme slike</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.SlikeController.Edit(RPPP_WebApp.Models.Slike,System.Int32,System.Int32,System.DateTime)">
+            <summary>
+            Ažurira sliku
+            </summary>
+            <param name="slika">Podaci o slici</param>
+            <param name="id">Id kamere</param>
+            <param name="prevIdid">prethodni Id kamere</param>
+            <param name="prevDate">prethodni vrijeme i datum slike</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.SlikeController.Get(System.Int32,System.DateTime)">
+            <summary>
+            Vraća sliku čiji je Id jednak vrijednosti parametra id i datum jednak vrijednosti parametra datum
+            </summary>
+            <param name="id">IdKamere</param>
+            <param name="datum">Datum i vrijeme slike</param>
+            <returns></returns>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.TipSadrzajaController">
+            <summary>
+            Servis za rad s tipovima sadrzaja
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:RPPP_WebApp.Controllers.TipSadrzajaController.Index" -->
+        <member name="M:RPPP_WebApp.Controllers.TipSadrzajaController.Create">
+            <summary>
+            Vraca stranicu s formom za unos novog tipa sadrzaja
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.TipSadrzajaController.Create(RPPP_WebApp.Models.TipSadrzaja)">
+            <summary>
+            Obraduje post zahtjev za dodavanje novog tipa sadrzaja
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.TipSadrzajaController.Edit(System.Nullable{System.Int32})">
+            <summary>
+            Vraca stranicu s formom za azuriranje tipa sadrzaja
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.TipSadrzajaController.Edit(System.Int32,RPPP_WebApp.Models.TipSadrzaja)">
+            <summary>
+            Obraduje post zahtjev za azuriranje tipa sadrzaja
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.TipSadrzajaController.Delete(System.Nullable{System.Int32})">
+            <summary>
+            Vraca stranicu sa potvrdom brisanja tipa sadrzaja
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.TipSadrzajaController.DeleteConfirmed(System.Int32)">
+            <summary>
+            Obraduje zahtjev za brisanje tipa sadrzaja
+            </summary>
+        </member>
+        <member name="T:RPPP_WebApp.Controllers.ViewLogController">
+            <summary>
+            Web API servis za ispis loga 
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ViewLogController.Index">
+            <summary>
+            Vraća osnovnu stranicu logova
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPPP_WebApp.Controllers.ViewLogController.Show(System.DateTime)">
+            <summary>
+            Vraća stranicu logova koji su zapisani na dan koji je jedank parametru dan
+            </summary>
+            <param name="dan">Datum</param>
+            <returns></returns>
+        </member>
+        <member name="T:RPPP_WebApp.Extensions.ExcelCreator">
+            <summary>
+            Statična klasa koja stvara Excel file
+            </summary>
+        </member>
+        <member name="T:RPPP_WebApp.Extensions.ExceptionExtension">
+            <summary>
+            Razred sa proširenjima za iznimke
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Extensions.ExceptionExtension.CompleteExceptionMessage(System.Exception)">
+            <summary>
+            Vraća sadržaj poruka cijele hijerarhije neke iznimke. Za predanu iznimku provjerava se postoji li unutarnja iznimka.
+            Ako da, poruka unutanje iznimke dodaje se u rezultat te se dalje provjerava postoji li unutarnja iznimka unutarnje iznimke itd...    
+            </summary>
+            <param name="exc">Iznimka čija se kompletna hijerarhija poruka treba ispisati</param>
+            <returns>String formiran od poruka svih unutarnjih iznimki. Poruka svake iznimmke dodana je u novi redak</returns>
+        </member>
+        <member name="T:RPPP_WebApp.Extensions.Selectors.KamereSort">
+            <summary>
+            Statična klasa koja sortira kamere
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Extensions.Selectors.KamereSort.ApplySort(System.Linq.IQueryable{RPPP_WebApp.Models.Kamere},System.Int32,System.Boolean)">
+            <summary>
+            Statična metoda koja sortira kamere
+            </summary>
+            <param name="query">Lista kamera</param>
+            <param name="sort">Index stupca po kojem se sortira</param>
+            <param name="ascending">Smjer po kojem se sortira</param>
+            <returns>Listu sortiranih kamera</returns>
+        </member>
+        <member name="T:RPPP_WebApp.Extensions.Selectors.ObjektSort">
+            <summary>
+            Statična klasa koja sortira objekte
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Extensions.Selectors.ObjektSort.ApplySort(System.Linq.IQueryable{RPPP_WebApp.Models.Objekt},System.Int32,System.Boolean)">
+            <summary>
+            Statična metoda koja sortira objekte
+            </summary>
+            <param name="query">Lista objekata</param>
+            <param name="sort">Index stupca po kojem se sortira</param>
+            <param name="ascending">Smjer po kojem se sortira</param>
+            <returns>Listu sortiranih objekata</returns>
+        </member>
+        <member name="T:RPPP_WebApp.Extensions.Selectors.OdrzavanjeObjektaSort">
+            <summary>
+            Statična klasa koja sortira održavanja objekta
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Extensions.Selectors.OdrzavanjeObjektaSort.ApplySort2(System.Linq.IQueryable{RPPP_WebApp.Models.OdrzavanjeObjekta},System.Int32,System.Boolean)">
+            <summary>
+            Statična metoda koja sortira održavanja objekta
+            </summary>
+            <param name="query">Lista održavanja objekta</param>
+            <param name="sort">Index stupca po kojem se sortira</param>
+            <param name="ascending">Smjer po kojem se sortira</param>
+            <returns>Listu sortiranih održavanja objekta</returns>
+        </member>
+        <member name="T:RPPP_WebApp.Extensions.Selectors.SlikaSort">
+            <summary>
+            Statična klasa koja sortira slike
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.Extensions.Selectors.SlikaSort.ApplySort3(System.Linq.IQueryable{RPPP_WebApp.Models.Slike},System.Int32,System.Boolean)">
+            <summary>
+            Statična metoda koja sortira slike
+            </summary>
+            <param name="query">Lista slika</param>
+            <param name="sort">Index stupca po kojem se sortira</param>
+            <param name="ascending">Smjer po kojem se sortira</param>
+            <returns>Listu sortiranih slika</returns>
+        </member>
+        <member name="T:RPPP_WebApp.Models.ViewNaplatnaPostajaENC">
+            <summary>
+            Model ENC postaje koja je vezana uz naplatnu postaju
+            </summary>
+        </member>
+        <member name="T:RPPP_WebApp.ModelsPartials.StavkaCjenikaDenorm">
+            <summary>
+            Denormalizirana stavka cjenika potrebna za PDF dokument
+            </summary>
+        </member>
+        <member name="T:RPPP_WebApp.TagHelpers.PagerTagHelper">
+            <summary>
+            Tag helper za kreiranje vlastitih poveznica na stranice u rezultatu nekog upravljača
+            Upotrebljava se kao atribut HTML oznake *pager* koju mijenja u div
+            <example>
+            Primjer upotrebe
+            ```
+            <pager page-info="@Model.PagingInfo" page-action="Index" page-title="Unesite željenu stranicu" class="float-right">
+            </pager>
+            ```
+            U datoteku *_ViewImports.cshtml* potrebno dodati `@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers`  
+            te u pogled uključiti vlastitu javascript datoteku *gotopage.js*
+            </example>
+            </summary>  
+        </member>
+        <member name="P:RPPP_WebApp.TagHelpers.PagerTagHelper.PageInfo">
+            <summary>
+            Serijalizirani string koji sadrži informacije o trenutnoj i ukupnom broju stranicu 
+            </summary>
+        </member>
+        <member name="P:RPPP_WebApp.TagHelpers.PagerTagHelper.PageFilter">
+            <summary>
+            Serijalizirani string kojim se prenose informacije o aktivnom filtriranju podataka
+            </summary>
+        </member>
+        <member name="P:RPPP_WebApp.TagHelpers.PagerTagHelper.PageAction">
+            <summary>
+            Akcija na koju poveznica treba voditi
+            </summary>
+        </member>
+        <member name="P:RPPP_WebApp.TagHelpers.PagerTagHelper.PageTitle">
+            <summary>
+            Tekst za tooltip za trenutni broj stranice i unos ciljane stranice
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.TagHelpers.PagerTagHelper.BuildListItemForPage(System.Int32)">
+            <summary>
+            Stvara oznaku za i-tu stranicu koristeći *i* kao sadržaj poveznice
+            <seealso cref="M:RPPP_WebApp.TagHelpers.PagerTagHelper.BuildListItemForPage(System.Int32,System.String)"/>
+            </summary>
+            <param name="i">broj stranice</param>
+            <returns>TagBuilder s pripremljenom poveznicom</returns>
+        </member>
+        <member name="M:RPPP_WebApp.TagHelpers.PagerTagHelper.BuildListItemForPage(System.Int32,System.String)">
+            <summary>
+             Stvara oznaku za i-tu stranicu koristeći argument text kao sadržaj poveznice
+            </summary>
+            <param name="i">broj stranice</param>
+            <param name="text">tekst poveznice</param>
+            <returns>TagBuilder s pripremljenom poveznicom</returns>
+        </member>
+        <member name="M:RPPP_WebApp.TagHelpers.PagerTagHelper.BuildListItemForCurrentPage(System.Int32)">
+            <summary>
+            Stvara polje za prikaz trenutne stranice i unos željene stranice
+            </summary>
+            <param name="page">Broj trenutne stranice</param>
+            <returns></returns>
+        </member>
+        <member name="T:RPPP_WebApp.UtilClasses.Converters">
+            <summary>
+            Razred s metodama za formatiranje i konverziju podataka
+            </summary>
+        </member>
+        <member name="M:RPPP_WebApp.UtilClasses.Converters.koordinateToWGS(System.Double)">
+            <summary>
+            Pretvara geografkse koordinate u decimalnom obliku u WGS84 oblik(° ' '')
+            </summary>
+            <param name="koordinate">Geografske koordinate u deicmalnom obliku</param>
+            <returns>string oblika xx°yy'zz''</returns>
+        </member>
+        <member name="M:RPPP_WebApp.UtilClasses.Converters.convertAndFormatPrice(System.Nullable{System.Double})">
+            <summary>
+            Konvertira i formatira cijenu u kunama u format xx.yy kn (€xx.yy)
+            </summary>
+            <param name="cijena">Cijena u kunama</param>
+            <returns>string oblika xx.yy kn (€xx.yy)</returns>
+        </member>
+        <member name="M:RPPP_WebApp.UtilClasses.Converters.GetDionicaName(System.String,System.String,System.String)">
+            <summary>
+            Stvara ime dionice iz naziva njezine ulazne i izlazne naplatne postaje
+            </summary>
+            <param name="ulaz">Naziv ulazne naplatne postaje</param>
+            <param name="izlaz">Naziv izlazne naplazne postaja</param>
+            <param name="oznakaAutoceste">Oznaka autoceste na kojoj se nalazi</param>
+            <returns>string oblika nazivUlaz-nazivIzlaz</returns>
+        </member>
+        <member name="M:RPPP_WebApp.UtilClasses.Converters.GetDionicaName(RPPP_WebApp.Models.Dionice)">
+            <summary>
+            Stvara ime dionice 
+            Delegira izvođenje općenitijoj metodi
+            </summary>
+            <param name="d">Objekt Dionica</param>
+            <returns>string oblika nazivUlaz-nazivIzlaz</returns>
+        </member>
+        <member name="M:RPPP_WebApp.UtilClasses.Converters.RadnoVrijemeFormater(System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})">
+            <summary>
+            Formatira radno vrijeme u hh:mm format
+            </summary>
+            <param name="VrijemeOtvaranja">vrijeme otvaranja</param>
+            <param name="VrijemeZatvaranja">vrijeme zatvaranja</param>
+            <returns>string oblika hh:mm</returns>
+        </member>
+        <member name="T:RPPP_WebApp.ViewModels.EncpostajaViewModel">
+            <summary>
+            Model za prikaz pojedinačne ENC postaje
+            </summary>
+        </member>
+        <member name="T:RPPP_WebApp.ViewModels.EncpostajeViewModel">
+            <summary>
+            Model više ENC postaja
+            </summary>
+        </member>
+        <member name="T:RPPP_WebApp.ViewModels.IdLabel">
+            <summary>
+            Model za autocomplete
+            </summary>
+        </member>
+        <member name="T:RPPP_WebApp.ViewModels.NaplatnaPostajaDetailView">
+            <summary>
+            Model za prikaz master-detail naplatne postaje i cjenika
+            </summary>
+        </member>
+        <member name="T:RPPP_WebApp.ViewModels.NaplatnaPostajaViewModel">
+            <summary>
+            Model naplatne postaje s ENC postajom i izlaznim postajama
+            </summary>
+        </member>
+        <member name="T:RPPP_WebApp.ViewModels.NaplatnePostajeViewModel">
+            <summary>
+            Model više naplatnih postaja
+            </summary>
+        </member>
+        <member name="T:RPPP_WebApp.ViewModels.ParkiralistaGospVozViewModel">
+            <summary>
+            Model više parkirališta 
+            </summary>
+        </member>
+        <member name="T:RPPP_WebApp.ViewModels.ParkiralisteGospVozViewModel">
+            <summary>
+            Model podataka potrebnog za prikaze jednog parkirališta gospodarskih vozila
+            </summary>
+        </member>
+        <member name="T:RPPP_WebApp.ViewModels.StavkaCjenikaViewModel">
+            <summary>
+            Predstavlja model stavke cjenika koji služi za pogled 
+            </summary>
+        </member>
+    </members>
+</doc>

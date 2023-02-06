@@ -1,0 +1,5 @@
+2023-01-03 20:01:16.3146|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2023-01-03 20:01:16.4904|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2023-01-03 20:01:16.5076|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2023-01-03 20:01:16.5171|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2023-01-03 20:01:16.5171|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted

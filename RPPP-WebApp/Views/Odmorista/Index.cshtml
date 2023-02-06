@@ -1,0 +1,152 @@
+﻿@model RPPP_WebApp.ViewModels.OdmoristaViewModel
+
+@{
+    ViewBag.Title = "Odmorišta";
+}
+
+<h2>Popis odmorišta</h2>
+
+<p>
+    <a asp-action="Create">Dodaj novo odmorište</a>
+</p>
+
+<pager page-info="@Model.PagingInfo" page-action="Index" page-title="Unesite željenu stranicu"
+       class="float-right">
+</pager>
+
+
+
+<table class="table table-sm table-striped table-hover">
+    <thead>
+        <tr>
+            <th>
+                <a asp-route-sort="1" asp-route-page="@Model.PagingInfo.CurrentPage" asp-route-ascending="@(Model.PagingInfo.Sort == 1 ? !Model.PagingInfo.Ascending : true)">
+                    Naziv odmorišta
+                </a>
+            </th>
+            <th>
+                <a asp-route-sort="2" asp-route-page="@Model.PagingInfo.CurrentPage" asp-route-ascending="@(Model.PagingInfo.Sort == 2 ? !Model.PagingInfo.Ascending : true)">
+                    Dionica
+                </a>
+            </th>
+            <th>
+                <a asp-route-sort="3" asp-route-page="@Model.PagingInfo.CurrentPage" asp-route-ascending="@(Model.PagingInfo.Sort == 3 ? !Model.PagingInfo.Ascending : true)">
+                    Smjer
+                </a>
+            </th>
+            <th>
+                <a asp-route-sort="4" asp-route-page="@Model.PagingInfo.CurrentPage" asp-route-ascending="@(Model.PagingInfo.Sort == 4 ? !Model.PagingInfo.Ascending : true)">
+                    Stacionaža
+                </a>
+            </th>
+            <th>
+                <a asp-route-sort="5" asp-route-page="@Model.PagingInfo.CurrentPage" asp-route-ascending="@(Model.PagingInfo.Sort == 5 ? !Model.PagingInfo.Ascending : true)">
+                    Geografska dužina
+                </a>
+            </th>
+            <th>
+                <a asp-route-sort="6" asp-route-page="@Model.PagingInfo.CurrentPage" asp-route-ascending="@(Model.PagingInfo.Sort == 6 ? !Model.PagingInfo.Ascending : true)">
+                    Geografska širina
+                </a>
+            </th>
+            
+            <th>
+                <a asp-route-sort="7" asp-route-page="@Model.PagingInfo.CurrentPage" asp-route-ascending="@(Model.PagingInfo.Sort == 7 ? !Model.PagingInfo.Ascending : true)">
+                    Nadmorska visina
+                </a>
+            </th>           
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var collapseId = "collapse";
+            var num = 0;
+        }
+        @foreach (var odmoriste in Model.Odmorista)
+        {
+            collapseId = collapseId + num;
+            num++;
+
+            <tr>
+                <td class="text-left">
+                    <a class="btn btn-sm" data-bs-toggle="collapse" data-bs-target=#@collapseId
+                   role="button" aria-expanded="false" aria-controls=@collapseId
+                   title="Dostupni sadrzaji: ">
+                        <i class="fas fa-plus"></i>
+                    </a>
+
+                    <a asp-action="Details"
+                   asp-route-id="@odmoriste.Id"
+                   asp-route-page="@Model.PagingInfo.CurrentPage"
+                   asp-route-sort="@Model.PagingInfo.Sort"
+                   asp-route-ascending="@Model.PagingInfo.Ascending">
+                        @odmoriste.Naziv
+                    </a>
+                </td>
+                <td class="text-left">@odmoriste.DionicaNaziv</td>
+                <td class="text-left">@odmoriste.Smjer</td>
+                <td class="text-left">@odmoriste.Stacionaza</td>
+                @if(odmoriste.GeografskaDuzina.HasValue)
+                {
+                    <td class="text-left">@Model.konverterKoordinata(odmoriste.GeografskaDuzina.Value)</td>
+                }
+                else
+                {
+                    <td></td>
+                }
+
+                @if (odmoriste.GeografskaSirina.HasValue)
+                {
+                    <td class="text-left">@Model.konverterKoordinata(odmoriste.GeografskaSirina.Value)</td>
+                } else 
+                {
+                    <td></td>
+                }
+                <td class="text-left">@odmoriste.NadmorskaVisina</td>                
+                
+                <td class="btn-group">
+                    <a asp-action="Edit"
+                   asp-route-id="@odmoriste.Id"
+                   asp-route-page="@Model.PagingInfo.CurrentPage"
+                   asp-route-sort="@Model.PagingInfo.Sort"
+                   asp-route-ascending="@Model.PagingInfo.Ascending"
+                   class="btn btn-sm" title="Ažuriraj"><i class="fas fa-edit"></i></a>
+
+                    <form asp-action="Delete" method="post"
+                      asp-route-id="@odmoriste.Id"
+                      asp-route-page="@Model.PagingInfo.CurrentPage"
+                      asp-route-sort="@Model.PagingInfo.Sort"
+                      asp-route-ascending="@Model.PagingInfo.Ascending">
+                        <input type="hidden" name="NaplatnaId" value="@odmoriste.Id" />
+                        <button type="submit" class="btn btn-sm btn-danger delete" title="Obriši"><i class="fas fa-trash-alt"></i></button>
+                    </form>
+                </td>
+            </tr>
+
+            <tr class="collapse" id=@collapseId>
+                <td>
+                    <b>Sadržaji: </b>
+                    @foreach (var sadrzaj in odmoriste.Sadrzaj)
+                    {
+                        <br />
+                        <span>@sadrzaj.TipSadrzaja.Naziv</span>
+                    }
+                </td>    
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            collapseId = "collapse";
+        }
+    </tbody>
+</table>
+@section scripts {
+    <script src="~/js/pager.js" asp-append-version="true"></script>
+}

@@ -1,0 +1,12 @@
+2023-01-02 12:26:01.4535|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2023-01-02 12:26:01.4911|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2023-01-02 12:26:01.4992|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2023-01-02 12:26:01.4992|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2023-01-02 12:26:01.5040|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2023-01-02 12:28:27.6914|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping
+2023-01-02 12:28:38.6327|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2023-01-02 12:28:38.6644|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2023-01-02 12:28:38.6708|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2023-01-02 12:28:38.6708|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2023-01-02 12:28:38.6708|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2023-01-02 12:29:34.5217|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping

@@ -1,0 +1,494 @@
+2023-01-11 10:41:01.1310|0|DEBUG|Program|init main 
+2023-01-11 10:41:01.9046|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 10:41:01.9426|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 10:41:01.9497|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 10:41:01.9497|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 10:41:01.9541|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 11:07:15.9032|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 11:07:32.4666|0|DEBUG|Program|init main 
+2023-01-11 11:07:33.3535|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 11:07:33.3822|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 11:07:33.3879|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 11:07:33.3898|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 11:07:33.3898|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 11:07:53.1107|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at RPPP_WebApp.Controllers.KameraController.Get(Nullable`1 id, Int32 page, Int32 sort, Boolean ascending) in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/KameraController.cs:line 283
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-11 11:09:28.3220|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 11:09:38.7890|0|DEBUG|Program|init main 
+2023-01-11 11:09:39.5714|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 11:09:39.6013|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 11:09:39.6071|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 11:09:39.6099|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 11:09:39.6099|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 11:11:04.3996|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 16:09:23.4994|0|DEBUG|Program|init main 
+2023-01-11 16:09:24.4146|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 16:09:24.4451|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 16:09:24.4517|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 16:09:24.4517|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 16:09:24.4568|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 16:10:41.8916|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 16:10:51.7354|0|DEBUG|Program|init main 
+2023-01-11 16:10:52.5979|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 16:10:52.6274|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 16:10:52.6345|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 16:10:52.6368|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 16:10:52.6368|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 16:12:00.7723|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 16:22:41.8665|0|DEBUG|Program|init main 
+2023-01-11 16:22:42.7901|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 16:22:42.8201|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 16:22:42.8263|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 16:22:42.8284|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 16:22:42.8284|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 16:23:36.2587|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 16:26:36.9789|0|DEBUG|Program|init main 
+2023-01-11 16:26:37.7827|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 16:26:37.8158|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 16:26:37.8217|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 16:26:37.8251|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 16:26:37.8251|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 16:28:05.9734|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 16:31:11.1236|0|DEBUG|Program|init main 
+2023-01-11 16:31:12.0368|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 16:31:12.0683|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 16:31:12.0755|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 16:31:12.0755|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 16:31:12.0755|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 16:34:03.3946|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 16:34:13.1332|0|DEBUG|Program|init main 
+2023-01-11 16:34:14.2086|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 16:34:14.2382|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 16:34:14.2451|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 16:34:14.2451|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 16:34:14.2481|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 16:35:43.4987|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 16:36:44.9988|0|DEBUG|Program|init main 
+2023-01-11 16:36:45.8314|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 16:36:45.8647|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 16:36:45.8710|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 16:36:45.8731|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 16:36:45.8731|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 16:37:30.1524|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 16:37:40.8165|0|DEBUG|Program|init main 
+2023-01-11 16:37:41.6758|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 16:37:41.7050|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 16:37:41.7120|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 16:37:41.7120|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 16:37:41.7155|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 16:38:27.4909|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 16:38:37.8892|0|DEBUG|Program|init main 
+2023-01-11 16:38:38.9929|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 16:38:39.0237|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 16:38:39.0294|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 16:38:39.0315|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 16:38:39.0315|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 16:40:38.3745|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 16:40:48.2002|0|DEBUG|Program|init main 
+2023-01-11 16:40:49.5683|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 16:40:49.5968|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 16:40:49.6025|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 16:40:49.6046|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 16:40:49.6046|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 16:42:03.6920|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 16:42:13.0546|0|DEBUG|Program|init main 
+2023-01-11 16:42:13.9939|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 16:42:14.0223|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 16:42:14.0280|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 16:42:14.0280|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 16:42:14.0280|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 16:42:46.3360|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 16:42:55.6050|0|DEBUG|Program|init main 
+2023-01-11 16:42:56.8738|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 16:42:56.9179|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 16:42:56.9307|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 16:42:56.9328|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 16:42:56.9328|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 16:51:33.4192|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 16:57:26.5763|0|DEBUG|Program|init main 
+2023-01-11 16:57:27.6659|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 16:57:27.7027|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 16:57:27.7098|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 16:57:27.7126|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 16:57:27.7126|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 16:57:44.0502|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at RPPP_WebApp.Controllers.KameraController.Edit(Int32 id) in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/KameraController.cs:line 200
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-11 16:57:45.4001|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at RPPP_WebApp.Controllers.KameraController.Edit(Int32 id) in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/KameraController.cs:line 200
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-11 16:58:25.4666|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at RPPP_WebApp.Controllers.KameraController.Edit(Int32 id) in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/KameraController.cs:line 200
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-11 17:04:00.9675|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 17:17:02.7519|0|DEBUG|Program|init main 
+2023-01-11 17:17:12.9980|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 17:17:13.0823|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 17:17:13.0922|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 17:17:13.1106|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 17:17:13.1117|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 17:30:36.1456|0|DEBUG|Program|init main 
+2023-01-11 17:30:37.1053|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 17:30:37.1468|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 17:30:37.1542|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 17:30:37.1564|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 17:30:37.1564|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 17:31:13.3523|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 17:31:23.1195|0|DEBUG|Program|init main 
+2023-01-11 17:31:24.2839|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 17:31:24.3161|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 17:31:24.3217|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 17:31:24.3240|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 17:31:24.3240|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 17:32:42.7381|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 17:47:59.6567|0|DEBUG|Program|init main 
+2023-01-11 17:48:01.0076|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 17:48:01.0499|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 17:48:01.0565|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 17:48:01.0565|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 17:48:01.0565|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 17:48:06.5122|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'RPPP_WebApp.ViewModels.SlikaViewModel', but this ViewDataDictionary instance requires a model item of type 'RPPP_WebApp.Models.Slike'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method86(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Kamera_Show.ExecuteAsync() in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Kamera/Show.cshtml:line 78
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-11 17:48:06.5121|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'RPPP_WebApp.ViewModels.SlikaViewModel', but this ViewDataDictionary instance requires a model item of type 'RPPP_WebApp.Models.Slike'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method86(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Kamera_Show.ExecuteAsync() in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Kamera/Show.cshtml:line 78
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-11 17:48:10.9673|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 18:12:56.6924|0|DEBUG|Program|init main 
+2023-01-11 18:12:57.7708|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 18:12:57.8048|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 18:12:57.8120|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 18:12:57.8120|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 18:12:57.8158|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 18:13:06.7816|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'RPPP_WebApp.ViewModels.SlikaViewModel', but this ViewDataDictionary instance requires a model item of type 'RPPP_WebApp.Models.Slike'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method75(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Kamera_Show.ExecuteAsync() in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Views/Kamera/Show.cshtml:line 78
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-11 18:14:27.4969|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 18:20:47.6894|0|DEBUG|Program|init main 
+2023-01-11 18:20:48.7117|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 18:20:48.7414|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 18:20:48.7474|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 18:20:48.7496|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 18:20:48.7496|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 18:25:46.7900|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 18:25:55.7559|0|DEBUG|Program|init main 
+2023-01-11 18:25:56.5070|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 18:25:56.5370|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 18:25:56.5427|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 18:25:56.5442|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 18:25:56.5442|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 18:27:16.5843|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 18:43:53.3544|0|DEBUG|Program|init main 
+2023-01-11 18:43:54.2044|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 18:43:54.2434|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 18:43:54.2496|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 18:43:54.2516|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 18:43:54.2516|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 18:48:32.7246|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 18:48:46.1163|0|DEBUG|Program|init main 
+2023-01-11 18:48:46.8014|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 18:48:46.8301|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 18:48:46.8361|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 18:48:46.8361|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 18:48:46.8361|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 18:50:41.0181|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 18:50:50.3509|0|DEBUG|Program|init main 
+2023-01-11 18:50:51.0168|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 18:50:51.0449|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 18:50:51.0505|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 18:50:51.0520|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 18:50:51.0520|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 18:51:48.4725|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 18:51:57.1824|0|DEBUG|Program|init main 
+2023-01-11 18:51:57.8278|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 18:51:57.8587|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 18:51:57.8645|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 18:51:57.8645|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 18:51:57.8645|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 18:52:50.6061|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 18:53:01.5790|0|DEBUG|Program|init main 
+2023-01-11 18:53:02.1841|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 18:53:02.2130|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 18:53:02.2185|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 18:53:02.2200|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 18:53:02.2200|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 18:55:27.9106|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 18:55:36.1873|0|DEBUG|Program|init main 
+2023-01-11 18:55:36.7980|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 18:55:36.8273|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 18:55:36.8329|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 18:55:36.8329|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 18:55:36.8329|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 18:59:49.0340|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 18:59:57.2488|0|DEBUG|Program|init main 
+2023-01-11 18:59:57.8352|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 18:59:57.8635|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 18:59:57.8691|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 18:59:57.8691|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 18:59:57.8716|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 19:02:15.5839|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 19:04:31.6908|0|DEBUG|Program|init main 
+2023-01-11 19:04:32.2860|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 19:04:32.3159|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 19:04:32.3236|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 19:04:32.3257|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 19:04:32.3257|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 19:06:03.3966|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 19:06:11.9215|0|DEBUG|Program|init main 
+2023-01-11 19:06:12.5982|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 19:06:12.6301|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 19:06:12.6371|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 19:06:12.6371|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 19:06:12.6403|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 19:12:20.3921|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 19:14:07.6701|0|DEBUG|Program|init main 
+2023-01-11 19:14:08.4243|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 19:14:08.4540|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 19:14:08.4621|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 19:14:08.4644|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 19:14:08.4644|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 19:15:47.2463|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 19:16:00.6062|0|DEBUG|Program|init main 
+2023-01-11 19:16:01.3285|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 19:16:01.3616|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 19:16:01.3674|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 19:16:01.3690|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 19:16:01.3690|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 19:18:42.9487|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 19:18:51.6329|0|DEBUG|Program|init main 
+2023-01-11 19:18:52.4033|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 19:18:52.4322|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 19:18:52.4377|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 19:18:52.4377|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 19:18:52.4401|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 19:20:30.7084|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 19:20:39.1718|0|DEBUG|Program|init main 
+2023-01-11 19:20:39.8023|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 19:20:39.8311|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 19:20:39.8366|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 19:20:39.8366|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 19:20:39.8366|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 19:23:52.7459|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 19:24:02.1399|0|DEBUG|Program|init main 
+2023-01-11 19:24:02.9077|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 19:24:02.9372|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 19:24:02.9430|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 19:24:02.9455|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 19:24:02.9455|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 19:25:53.9274|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 19:26:01.8352|0|DEBUG|Program|init main 
+2023-01-11 19:26:02.4091|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 19:26:02.4386|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 19:26:02.4441|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 19:26:02.4441|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 19:26:02.4441|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 19:26:09.5342|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at RPPP_WebApp.Controllers.KameraController.Edit(Int32 id) in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/KameraController.cs:line 200
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-11 19:26:43.1171|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 19:26:51.0179|0|DEBUG|Program|init main 
+2023-01-11 19:26:51.6881|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 19:26:51.7207|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 19:26:51.7268|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 19:26:51.7283|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 19:26:51.7283|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 19:27:01.5968|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at RPPP_WebApp.Controllers.KameraController.Edit(Int32 id) in /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/Controllers/KameraController.cs:line 200
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-11 19:27:51.6173|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 19:27:59.6783|0|DEBUG|Program|init main 
+2023-01-11 19:28:00.2736|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 19:28:00.3023|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 19:28:00.3078|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 19:28:00.3078|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 19:28:00.3078|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 19:28:44.4909|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 19:28:52.3526|0|DEBUG|Program|init main 
+2023-01-11 19:28:52.9241|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 19:28:52.9533|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 19:28:52.9590|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 19:28:52.9605|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 19:28:52.9605|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 19:30:18.8537|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-01-11 19:30:26.9532|0|DEBUG|Program|init main 
+2023-01-11 19:30:27.7411|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-01-11 19:30:27.7715|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-01-11 19:30:27.7775|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-11 19:30:27.7775|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-11 19:30:27.7802|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/macko14/RiderProjects/webapp-52/RPPP-WebApp/RPPP-WebApp/ 
+2023-01-11 19:31:56.7056|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
