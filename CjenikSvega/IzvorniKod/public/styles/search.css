@@ -1,0 +1,85 @@
+.not-found-anything{
+    margin: 7.5rem auto;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.not-found-link{
+    color: #1190cb;
+    text-decoration: none;
+    text-align: center;
+}
+
+.not-found-link:hover{
+    text-decoration: underline;
+}
+
+.not-found-item{
+    margin: auto;
+}
+
+.not-found-item-search{
+    margin-top: 1rem;
+}
+
+.not-found-item-search > *{
+    font-size: 1.2rem;
+}
+
+.container{
+    margin: 6rem auto;
+    border: 2.5px solid #1190cb;
+    border-radius: 2rem;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1.5px solid #1190cb;
+    font-size: 1.25rem;
+    padding: 3rem;
+}
+
+.container-result{
+    margin-top: 1rem;
+}
+
+.container-result-name{
+    margin-right: 4rem;
+}
+
+.container-result-link{
+    text-decoration: none;
+    color: #1190cb;
+    font-size: 1rem;
+}
+
+.container-result-link:hover{
+    text-decoration: underline;
+}
+
+.container-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    padding: 3rem;
+}
+
+.container-btn{
+    padding: 0.2rem 0.5rem;
+    background-color: #1190cb;
+    border: 1px solid #1190cb;
+    color: white;
+    border-radius: 0.25rem;
+}
+
+.container-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #1190cb;
+}

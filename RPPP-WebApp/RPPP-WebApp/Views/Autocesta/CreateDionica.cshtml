@@ -1,0 +1,42 @@
+﻿@model Dionice
+
+<tr hx-target="this" hx-swap="beforebegin">
+    <td class="text-start">
+        -
+    </td>
+    <td class="text-start">
+        <input asp-for="DuljinaKm" class="form-control" />
+    </td>
+    <td class="text-start">
+        <div class="form-group">
+            <input class="form-control"
+                data-autocomplete="naplatnaPostaja"
+                data-autocomplete-placeholder-name="UlaznaPostaja"
+            />
+            <input type="hidden" asp-for="UlaznaPostaja" data-autocomplete-placeholder="UlaznaPostaja" />
+        </div>
+    </td>
+    <td class="text-start">
+        <div class="form-group">
+            <input class="form-control"
+                data-autocomplete="naplatnaPostaja"
+                data-autocomplete-placeholder-name="IzlaznaPostaja"
+            />
+            <input type="hidden" asp-for="IzlaznaPostaja" data-autocomplete-placeholder="IzlaznaPostaja" />
+        </div>
+    </td>
+    <td>
+        <input type="hidden" asp-for="OznakaAutoceste" value="@Model.OznakaAutoceste"/>
+        <button hx-include="closest tr"
+                hx-post="@Url.Action(nameof(AutocestaController.CreateDionica))"
+                class="btn btn-sm btn-primary" title="Spremi">
+            <i class="fas fa-save"></i>
+        </button>
+    </td>
+    <td>
+        <div asp-validation-summary="All"></div>
+    </td>
+</tr>
+
+<script src="~/lib/jqueryui/jquery-ui.js"></script>
+<script src="~/js/autocomplete.js" asp-append-version="true"></script>

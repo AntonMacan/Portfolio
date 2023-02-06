@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Profil</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="./styles/profil.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+<script type="text/javascript">
+    function authHandler(req, res, next) {
+    //ako korisnik nije logiran, redirekcija na osnovnu stranicu
+    if (req.session.user === undefined) {
+        console.log("Redirecting user to login");
+        req.session.err = "Please login to view the requested page."
+        req.session.save(() => {
+            //redirekcija na osnovnu stranicu
+            res.redirect("/login");
+        });
+    } else {
+        console.log("User data present");
+        next();
+    }
+
+
+}
+module.exports = authHandler;
+</script>
+
+<body class="content">
+
+    <header class="header primary-color-bg">
+        <nav class="navigation container">
+            <div class="menu">
+                <a href="/" class="link menu-item <%if (linkActive === "home") {%>  link-active  <%}%>">Home</a>
+                <a href="/logout" class="link menu-item <%if (linkActive === "logout") {%>  link-active  <%}%>">Logout</a>
+                <a href="/prices" class="link menu-item <%if (linkActive === "prices") {%>  link-active  <%}%>">Cijene</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main">
+            <div class="container">
+                    <span class="profil"> ADMIN PROFIL</span>
+                </h1>
+                <div class="dataset">
+
+                    <div class="dataset-entry">
+                        <div class="dataset-property" style:"">
+                            Adminovo korisničko ime:
+                        </div>
+                        <div class="dataset-value">
+                            <%= admin.user_name %>
+                        </div>
+                        <form>
+                            <input type="radio" id="username" name="username" value="username">
+                            <label for="username">Objavi Javno:</label><br>
+                        </form>
+                    </div>
+
+                    <div class="dataset-entry">
+                        <div class="dataset-property">
+                            Ime:
+                        </div>
+                        <div class="dataset-value">
+                            <%= admin.first_name %>
+                        </div>
+                        <form>
+                            <input type="radio" id="name" name="name" value="name">
+                            <label for="name">Objavi Javno:</label><br>
+                        </form>
+                    </div>
+
+                    <div class="dataset-entry">
+                        <div class="dataset-property">
+                            Prezime:
+                        </div>
+                        <div class="dataset-value">
+                            <%= admin.last_name %>
+                        </div>
+                        <form>
+                            <input type="radio" id="lastname" name="lastname" value="lastname">
+                            <label for="lastname">Objavi Javno:</label><br>
+                        </form>
+                    </div>
+                    <div class="dataset-entry">
+                        <div class="dataset-property">
+                            E-mail adresa:
+                        </div>
+                        <div class="dataset-value">
+                            <%= admin.email %>
+                        </div>
+                        <form>
+                            <input type="radio" id="email" name="email" value="email">
+                            <label for="email">Objavi Javno:</label><br>
+                        </form>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <form>
+                <label for="zabrana">Zabrani pristup stranici::</label><br>
+                <input type="text" id="zabrana" name="zabrana"><br>
+              </form>
+
+              <form>
+                <label for="imetrgovine">Ime trgovine:</label><br>
+                <input type="text" id="imetrgovine" name="imetrgovine"><br>
+                <label for="komentar">Komentar:</label><br>
+                <input type="text" id="komentar" name="komentar"><br>
+              </form>
+
+              <% for (let prijedlog of prijedlozi) { %>
+                <%= prijedlog.tekst%>
+                <%=prijedlog.slika%>
+                <form>
+                    <input type="radio" id="odobri" name="odobri" value="odobri">
+                    <label for="odobri">Odobri: </label><br>
+                    </form>
+                <% }%>
+            </section>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

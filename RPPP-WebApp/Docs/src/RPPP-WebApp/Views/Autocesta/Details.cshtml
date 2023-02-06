@@ -1,0 +1,89 @@
+﻿@model Autoceste
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Autocesta</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Oznaka)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Oznaka)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Koncesionar)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Koncesionar)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Pocetak)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Pocetak)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Kraj)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kraj)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DuljinaKm)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DuljinaKm)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-oznaka="@Model?.Oznaka">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+<hr />
+<div>
+    <h4>Dionice na ovoj autocesti</h4>
+    <table class="table table-sm table-striped table-hover">
+        <thead>
+            <tr>
+                <th>
+                    Naziv dionice
+                </th>
+                <th>
+                    Duljina (km)
+                </th>
+                <th>
+                    Ulazna postaja
+                </th>
+                <th>
+                    Izlazna postaja
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var dionica in Model.Dionice)
+            {
+                    <tr>
+                        <td class="text-left">
+                            @RPPP_WebApp.UtilClasses.Converters.GetDionicaName(dionica)
+                        </td>
+                        <td class="text-left">
+                            @dionica.DuljinaKm
+                        </td>
+                        <td>
+                            @dionica.UlaznaPostajaNavigation.Ime
+                        </td>
+                        <td>
+                            @dionica.IzlaznaPostajaNavigation.Ime
+                        </td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+</div>

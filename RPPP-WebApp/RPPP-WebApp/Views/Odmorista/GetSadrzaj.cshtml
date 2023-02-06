@@ -1,0 +1,74 @@
+﻿@model Sadrzaj
+
+<tr hx-target="this" hx-swap="outerHTML">
+    <td class="text-left">
+        @Model.Naziv
+    </td>
+    <td class="text-left">@Model.TipSadrzaja.Naziv</td>
+
+    @if (Model.GeografskaDuzina.HasValue)
+    {
+        <td class="text-left">@Model.GeografskaDuzina.Value</td>
+    }
+    else
+    {
+        <td></td>
+    }
+
+    @if (Model.GeografskaSirina.HasValue)
+    {
+        <td class="text-left">@Model.GeografskaSirina.Value</td>
+    }
+    else
+    {
+        <td></td>
+    }
+
+    <td class="text-left">
+
+        @foreach (var rv in Model.RadnoVrijeme)
+        {
+            string dan = "";
+            switch (rv.Dan)
+            {
+                case 1:
+                    dan = "pon";
+                    break;
+                case 2:
+                    dan = "uto";
+                    break;
+                case 3:
+                    dan = "sri";
+                    break;
+                case 4:
+                    dan = "čet";
+                    break;
+                case 5:
+                    dan = "pet";
+                    break;
+                case 6:
+                    dan = "sub";
+                    break;
+                case 7:
+                    dan = "ned";
+                    break;
+            }
+
+            <span>@dan @rv.VrijemePocetka.ToString(@"hh\:mm") - @rv.VrijemeZavrsetka.ToString(@"hh\:mm")</span>
+            <br />
+        }
+    </td>
+    <td>
+        <a class="btn btn-sm"
+           hx-get="@Url.Action(nameof(OdmoristaController.EditSadrzaj), new { id = Model.Id })"
+           title="Ažuriraj"><i class="fas fa-edit"></i></a>
+    </td>
+    <td>
+        <button class="btn btn-sm btn-danger"
+                hx-confirm="Obrisati sadrzaj?"
+                hx-delete="@Url.Action(nameof(OdmoristaController.DeleteSadrzaj), new { id = Model.Id })"
+                title="Obriši">
+            <i class="fas fa-trash-alt"></i>
+        </button>
+    </td>
+</tr>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profil</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="./styles/profil.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+
+<body class="content">
+	<%- include("partials/navbar.ejs")%>
+    <main class="main">
+        <section class="section secondary-color-bg">
+            <div class="container">
+                
+                <h1 class="decorated-title font-secondary main-color">
+                    <span class="profil">PROFIL</span>
+                </h1>
+                <div class="dataset">
+
+                    <div class="dataset-entry">
+                        <div class="dataset-property">
+                            Ime trgovine
+                        </div>
+                        <div class="dataset-value">
+                            <%= trgovina.naziv %>
+                        </div> 
+                    </div>
+
+                    <div class="dataset-entry">
+                        <div class="dataset-property" style:"">
+                            Krivo unesene cijene
+                        </div>
+                        <div class="dataset-value">
+                            <%= trgovina.wrong_prices %>
+                        </div> 
+                    </div>
+
+                    <div class="dataset-entry">
+                        <div class="dataset-property" style:"">
+                            Komentar admina
+                        </div>
+                        <div class="dataset-value">
+                            <%= trgovina.comment %>
+                        </div> 
+                    </div>
+                    <hr>
+                    <div class="dataset">
+
+                        <div class="dataset-entry">
+                            <div class="dataset-property">
+                                Korisničko ime:
+                            </div>
+                            <div class="dataset-value">
+                                <%= user.nickname %>
+                            </div>
+                            <form action="/changePrivacy" method="post">
+                                <label for="nickname">Objavi javno:</label>
+                                <input type="checkbox" id="nickname" name="nickname" 
+                                <%if (user.privacy == undefined || user.privacy.is_nickname_public) {%>  checked  <%} else {%> unchecked <%}%>
+                                >
+                                <input type="hidden" name="attribute" value = "nickname">
+                                <input type="hidden" name="user_id" value = "<%= user.id %>">
+                                <button type="submit">Spremi promjene</button>
+                                <br>
+                            </form>
+                        </div>
+    
+                        <div class="dataset-entry">
+                            <div class="dataset-property">
+                                Ime:
+                            </div>
+                            <div class="dataset-value">
+                                <%= user.first_name %>
+                            </div>
+                            <form action="/changePrivacy" method="post">
+                                <label for="first_name">Objavi javno:</label>
+                                <input type="checkbox" id="first_name" name="first_name" 
+                                <%if (user.privacy == undefined || user.privacy.is_first_name_public) {%>  checked  <%} else {%> unchecked <%}%>
+                                >
+                                <input type="hidden" name="attribute" value = "first_name">
+                                <input type="hidden" name="user_id" value = "<%= user.id %>">
+                                <button type="submit">Spremi promjene</button>
+                                <br>
+                            </form>
+                        </div>
+    
+                        <div class="dataset-entry">
+                            <div class="dataset-property">
+                                Prezime:
+                            </div>
+                            <div class="dataset-value">
+                                <%= user.last_name %>
+                            </div>
+                            <form action="/changePrivacy" method="post">
+                                <label for="last_name">Objavi javno:</label>
+                                <input type="checkbox" id="last_name" name="last_name" 
+                                <%if (user.privacy == undefined || user.privacy.is_last_name_public) {%>  checked  <%} else {%> unchecked <%}%>
+                                >
+                                <input type="hidden" name="attribute" value = "last_name">
+                                <input type="hidden" name="user_id" value = "<%= user.id %>">
+                                <button type="submit">Spremi promjene</button>
+                                <br>
+                            </form>
+                        </div>
+                        <div class="dataset-entry">
+                            <div class="dataset-property">
+                                E-mail adresa:
+                            </div>
+                            <div class="dataset-value">
+                                <%= user.email %>
+                            </div>
+                            <form action="/changePrivacy" method="post">
+                                <label for="email">Objavi javno:</label>
+                                <input type="checkbox" id="email" name="email" 
+                                <%if (user.privacy == undefined || user.privacy.is_email_public) {%>  checked  <%} else {%> unchecked <%}%>
+                                >
+                                <input type="hidden" name="attribute" value = "email">
+                                <input type="hidden" name="user_id" value = "<%= user.id %>">
+                                <button type="submit">Spremi promjene</button>
+                                <br>
+                            </form>
+                        </div>
+    
+    
+                    </div>
+
+                    
+
+                </div>
+
+            </div>
+
+            <div>
+                <div class="container">
+                    <h1>Upload file-a</h1>
+                    <form id="form-file-trgovina" action="/profile" method="post" enctype="multipart/form-data"> 
+                        <div class="input-group">
+                            <label for="files">Označi file</label>
+                            <input id="files" type="file" name="fileName">
+                        </div>
+                        <div style="color: red; text-align: center; font-size: 1.5rem;"><%= error %></div>
+                        <button class="submit-btn" type="submit">Upload</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

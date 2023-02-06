@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cjenik svega</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="./styles/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "icon" href = "/images/logo.png" type = "image/x-icon">
+ </head>
+
+<body>
+
+    <%- include('partials/navbar.ejs') %>
+
+    <div class="home-form">
+        <form action = "/" method="post">
+            <img src="./images/logo.png" alt="" class="logo">
+            <div>
+                <input type="text" placeholder="Kreni s pretragom proizvoda..." name="item" class="home-form-input">
+                <input type="submit" value="Pretraži" class="home-form-btn">
+            </div>
+    
+        </form>
+    </div>
+
+
+</body>
+
+</html>

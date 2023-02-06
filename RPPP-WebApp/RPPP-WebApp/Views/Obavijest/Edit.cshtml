@@ -1,0 +1,65 @@
+﻿@model Obavijesti
+
+@{
+    ViewBag.Title = "Ažuriranje obavijesti";
+}
+
+<form asp-route-id="@Model.Id"
+      asp-route-page="@ViewBag.Page"
+      asp-route-sort="@ViewBag.Sort"
+      asp-route-ascending="@ViewBag.Ascending"
+      method="post">
+    <div asp-validation-summary="All"></div>
+
+    <div class="form-group">
+        <label asp-for="Naslov"></label>
+        <div><span asp-validation-for="Naslov" class="text-danger" /></div>
+        <input asp-for="Naslov" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="IdDionice">Dionica</label>
+            <input class="form-control"
+                data-autocomplete="dionica"
+                data-autocomplete-placeholder-name="Dionica"
+                value="@RPPP_WebApp.UtilClasses.Converters.GetDionicaName(Model.IdDioniceNavigation)"
+            />
+            <input type="hidden" asp-for="IdDionice" data-autocomplete-placeholder="Dionica" />
+        </div>
+    <div class="form-group">
+        <label asp-for="Opis"></label>
+        <div><span asp-validation-for="Opis" class="text-danger" /></div>
+        <input asp-for="Opis" class="form-control" />
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Spremi</button>
+        <a asp-action="Index"
+           asp-route-page="@ViewBag.Page"
+           asp-route-sort="@ViewBag.Sort"
+           asp-route-ascending="@ViewBag.Ascending"
+           class="btn btn-secondary">Odustani</a>
+    </div>
+
+</form>
+
+@section styles{
+            <link rel="stylesheet" href="~/lib/jqueryui/themes/base/jquery-ui.css" />
+}
+
+@section scripts {
+            <script src="~/htmx/htmx.min.js" asp-append-version="true"></script>
+            <partial name="IncludeValidation" />
+
+            <script>
+                document.body.addEventListener("showMessage", function (evt) {
+                    toastr[evt.detail.messageType](evt.detail.message);
+                })
+                document.body.addEventListener("htmx:responseError",
+                    function (evt) {
+                        toastr["error"](evt.detail.error);
+                    })
+            </script>
+
+            <script src="~/lib/jqueryui/jquery-ui.js"></script>
+            <script src="~/js/autocomplete.js" asp-append-version="true"></script>
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Cjenik svega</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel = "icon" href = "/images/logo.png" type = "image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../styles/report.css">
+		<link rel="stylesheet" type="text/css" href="../styles/navbar.css">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	</head>
+
+	<body>
+		
+		<%- include('partials/navbar.ejs') %>
+
+		<div class="container">
+			<div class="container-items">
+				<h2>Prijavi krivu cijenu za: <a href="/profile/<%= storeId %>" class="container-link"><%=storeName%></a></h2>
+				<h3>Proizvod: <a href="/item/<%= barcode %>" class="container-link"><%=itemName%></a><h3>
+
+				<form action="/report/<%=storeId%>?item=<%=barcode%>" method="post" enctype="multipart/form-data">
+					<input type="hidden" name="storeId" value="<%=storeId%>">
+					<input type="hidden" name="barcode" value="<%=barcode%>">
+
+					<div class="container-div">
+						<label for="newprice" class="container-label">Prava cijena: </label>
+						<input type="text" name="newprice">
+					</div>
+
+					<div class="container-div">
+						<label for="filename" class="container-label">Izaberi sliku: </label>
+						<input type="file" name="filename">
+					</div>
+
+					<input type="submit" value="Send" class="container-btn">
+				</form>
+			</div>
+		</div>
+
+	</body>
+
+</html>

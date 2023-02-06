@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Cjenik svega</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "icon" href = "/images/logo.png" type = "image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../styles/search.css">
+    <link rel="stylesheet" type="text/css" href="../styles/navbar.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</head>
+
+<body>
+
+    <%- include('partials/navbar.ejs') %>
+
+    <% if(proizvodi.length == 0 && trgovine.length == 0) {%>
+        <div class="not-found-anything">
+            <div>Uneseno ime ne odgovara nijednom prozvodu niti trgovini :(</div>
+            <a href="/" class="not-found-link">Povratak na home</a>
+        </div>
+
+    <% } else { %>
+        <div class="container">
+            <div class="container-left">
+                <% if(proizvodi.length > 0) { %> 
+                    <h2>Lista pronađenih proizvoda: </h2>
+
+                    <ul>
+                        <% for (let proizvod of proizvodi) { %>
+                            <li class="container-result">
+                                <span class="container-result-name"><%= proizvod.naziv %></span>
+                                <a class="container-result-link" href = "../item/<%- proizvod.barkod %>">Detalji proizvoda ---></a>
+                            </li> 
+                        <% } %>
+                    </ul>
+
+                <% } else { %>
+                    <div class="not-found-item">
+                        <div>Nažalost, navedeni proizvod nemamo u katalogu.</div>
+
+                        <form action="/search" class="not-found-item-search">
+                            <input type="text" placeholder="Pretraži drugi proizvod..." name="item">
+                            <input type="submit" value="Search" class="container-btn">
+                        </form>
+
+                    </div>
+                <% } %>
+
+            </div>
+
+            <div class="container-right">
+                <% if(trgovine.length > 0) { %> 
+                    <h2>Lista pronađenih trgovina: </h2>
+
+                    <ul>
+                        <% for (let trgovina of trgovine) { %>
+                            <li class="container-result">
+                                <span class="container-result-name"><%= trgovina.naziv %></span>
+                                <a class="container-result-link" href = "../profile/<%- trgovina.id %>">Detalji trgovine ---></a>
+                            </li> 
+                        <% } %>
+                    </ul>
+
+
+                <% } else { %>
+                    <div class="not-found-item">
+                        <div>Nažalost, trgovina s tim imenom ne postoji.</div>
+                        
+                        <form action="/search" class="not-found-item-search">
+                            <input type="text" placeholder="Pretraži drugu trgovinu..." name="item">
+                            <input type="submit" value="Search" class="container-btn">
+                        </form>
+                    </div>  
+
+                <% } %>
+
+            </div>
+
+        </div>
+
+    <% } %>
+
+</body>
+
+</html>

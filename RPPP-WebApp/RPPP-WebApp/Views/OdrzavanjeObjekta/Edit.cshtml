@@ -1,0 +1,41 @@
+@using Org.BouncyCastle.Crypto.Engines
+@model OdrzavanjeObjekta
+@{
+    ViewBag.Title = "Ažuriranje odrzavanja objekta";
+}
+<tr hx-target="this" hx-swap="outerHTML">
+    <td class="text-start">
+        <select class="form-select" asp-for="ObjektId" asp-items="ViewBag.Objekti">
+        </select>
+    </td>
+    <td class="text-start">
+        <input asp-for="Datum" class="form-control"/>
+    </td>
+    <td class="text-start">
+        <input asp-for="Opis" class="form-control"/>
+    </td>
+    <td class="text-start">
+        <input asp-for="Ishod" class="form-control"/>
+    </td>
+       <td class="text-start">
+            <select class="form-select" asp-for="TipId" asp-items="ViewBag.Tipovi">
+            </select>
+        </td>
+    <td class="text-start">
+            <input asp-for="Odrzavatelj" class="form-control"/>
+        </td>
+    <td>
+        <input type="hidden" asp-for="Id"/>
+        <button hx-include="closest tr"
+                hx-post="@Url.Action(nameof(OdrzavanjeObjektaController.Edit),new {objektId = Model.ObjektId, tipId = Model.TipId})"
+                class="btn btn-sm btn-primary" title="Spremi"><i class="fas fa-save"></i></button>
+    </td>
+    <td>
+        <button class="btn btn-sm cancel"
+                hx-get="@Url.Action(nameof(OdrzavanjeObjektaController.Get), new { id = Model.Id})"
+                title="Odustani"><i class="fas fa-undo-alt"></i></button>
+    </td>
+    <td>
+        <div asp-validation-summary="All"></div>
+    </td>
+</tr>

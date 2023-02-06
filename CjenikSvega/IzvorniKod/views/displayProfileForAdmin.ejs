@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profil</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../styles/profil.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+
+<body>
+
+    <main class="main">
+        <section>
+            <div class="container">
+                <h1 >
+                    <span>Profil</span>
+                </h1>
+                <div class="dataset">
+                    <% if(displayTrgovina !== undefined) {%>
+                    <div class="dataset-entry">
+                        <div class="dataset-property" style:"">
+                            Ime trgovine
+                        </div>
+                        <div class="dataset-value">
+                            <%= displayTrgovina.naziv %>
+                        </div> 
+                    </div>
+
+                    <div class="dataset-entry">
+                        <div class="dataset-property" style:"">
+                            Krivo unesene cijene
+                        </div>
+                        <div class="dataset-value">
+                            <%= displayTrgovina.wrong_prices %>
+                        </div> 
+                    </div>
+
+                    <div class="dataset-entry">
+                        <div class="dataset-property" style:"">
+                            Komentar admina
+                        </div>
+                        <div class="dataset-value">
+                            <%= displayTrgovina.comment %>
+                        </div> 
+                    </div>
+                    <div>
+                        <form action="/addComment" method="post">
+                            <label for="comment">Dodaj komentar:</label>
+                            <input type="text" id="comment" name="comment"><br><br>
+                            <input type="hidden" name="storeid" value = "<%= displayUser.id %>">
+                            <input type="submit" value="Dodaj">
+                          </form>
+                    </div>
+                    <hr>
+                    <% } %>
+                    <div class="dataset">
+
+                        <div class="dataset-entry">
+                            <div class="dataset-property">
+                                Korisničko ime
+                            </div>
+                            <div class="dataset-value">
+                                <% if (displayUser.nickname !== undefined) {%>
+                                    <%= displayUser.nickname %>
+                                <%} else { %>
+                                    <i>privatno</i>
+                                <% } %>
+                            </div>
+                        </div>
+    
+                        <div class="dataset-entry">
+                            <div class="dataset-property">
+                                Ime
+                            </div>
+                            <div class="dataset-value">
+                                <% if (displayUser.first_name !== undefined) {%>
+                                    <%= displayUser.first_name %>
+                                <%} else { %>
+                                    <i>privatno</i>
+                                <% } %>
+                            </div>
+                        </div>
+    
+                        <div class="dataset-entry">
+                            <div class="dataset-property">
+                                Prezime
+                            </div>
+                            <div class="dataset-value">
+                                <% if (displayUser.last_name !== undefined) {%>
+                                    <%= displayUser.last_name %>
+                                <%} else { %>
+                                    <i>privatno</i>
+                                <% } %>
+                            </div>
+                        </div>
+                        <div class="dataset-entry">
+                            <div class="dataset-property">
+                                E-mail adresa
+                            </div>
+                            <div class="dataset-value">
+                                <% if (displayUser.email !== undefined) {%>
+                                    <%= displayUser.email %>
+                                <%} else { %>
+                                    <i>privatno</i>
+                                <% } %>
+                            </div>
+                        </div>
+                        <div>
+                            <form action="/forbidAccess" method="post">
+                                <input type="hidden" name="userid" value = "<%= displayUser.id %>">
+                                <input type="submit" value="Zabrani pristup">
+                            </form>
+                        </div>
+    
+    
+                    </div>
+
+                    
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

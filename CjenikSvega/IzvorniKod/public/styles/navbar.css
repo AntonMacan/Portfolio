@@ -1,0 +1,30 @@
+.navbar {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link {
+    color: #7cdfd6;
+    text-decoration: none;
+    outline: none;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding: 25px;
+}
+
+.link:hover {
+    color: #1190cb;
+}
+
+.link-active {
+    text-decoration: underline;
+    color: #1190cb;
+    font-size: 1.35rem;
+}
+
+
+
+

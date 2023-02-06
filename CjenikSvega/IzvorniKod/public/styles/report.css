@@ -1,0 +1,54 @@
+.container{
+    margin: 6rem auto;
+    border: 2.5px solid #1190cb;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 35%;
+}
+
+h2{
+    margin-bottom: 0;
+}
+
+h3{
+    margin-top: 0.5rem;
+}
+
+.container-items{
+    padding: 2rem;
+}
+
+.container-link{
+    color:#1190cb;
+    text-decoration: none;
+}
+
+.container-link:hover{
+    text-decoration: underline;
+}
+
+.container-div{
+    margin-bottom: 1rem;
+}
+
+.container-label{
+    margin-right: 1rem;
+}
+
+.container-btn{
+    padding: 0.25rem 0.5rem;
+    background-color: #1190cb;
+    border: 2px solid #1190cb;
+    color: white;
+    border-radius: 0.25rem;
+}
+
+.container-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #1190cb;
+}
+
+

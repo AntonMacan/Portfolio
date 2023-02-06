@@ -1,0 +1,21 @@
+<header class="header">
+    <nav class ="navbar">
+        <div>
+            <a href="/" class="link <%if (linkActive === "home") {%>  link-active  <%}%>">Naslovnica</a>
+            <% if( user !== undefined ) {%> 
+                <a href="/profile" class="link <%if (linkActive === "user") {%>  link-active  <% } %>"> Profil </a>
+                <a href="/notifications" class="link <%if (linkActive === "notifications") { %>  link-active  <% } %>"> Obavijesti </a>
+            <% } %>               
+        </div>
+
+        <div>
+            <% if( user !== undefined ) {%> 
+                <a href="/logout" class="link <%if (linkActive === "logout") {%>  link-active  <%}%>">Odjava</a>
+            <% } else {%>
+                <a href="/login" class="link <%if (linkActive === "login") {%>  link-active  <%}%>">Prijava</a>
+                <a href="/signup" class="link <%if (linkActive === "signup") {%>  link-active  <%}%>">Registracija</a>
+            <% } %> 
+        </div>
+
+    </nav>
+</header>

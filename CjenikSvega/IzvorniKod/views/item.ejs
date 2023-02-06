@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cjenik svega</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../styles/item.css">
+    <link rel = "icon" href = "/images/logo.png" type = "image/x-icon">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+
+    <%- include("partials/navbar.ejs"); %>
+
+    <div class="containers">
+        <div class="container">
+            <div class="container-items">
+    
+                <% if(item.tags.length == 0) { %>
+                    <h3>Ovaj proizvod još nema nijednu oznaku.</h3>
+                <% } else { %>
+                    <h3>Oznake proizvoda:</h3>
+                    <% for (let tag of item.tags) { %>
+                        <p>
+                            &rarr; <a href="/search/<%=tag%>" class="li-link"><%= tag %></a>
+                        </p>	
+                    <% } %>
+                <% } %>
+
+                <% if(item.stores.length == 0) { %>
+                    <div class="sold-out">
+                        <div><%= item.name %> je nažalost rasprodan u svim trgovinama. :(</div>
+                        <a href="/" class="sold-out-link">Povratak na home</a>
+                    </div>
+                <% } else { %>
+                    <div class="container-stores">
+                        <h2>Pronađi proizvod u sljedećim trgovinama:</h2>
+                        <ul>
+                            <% for (let trgovina of item.stores) { %>
+                
+                                <li class="container-li">
+                                    <a href="/profile/<%=trgovina.TrgovinaID%>" class="li-link"><span><%= trgovina.name %></span></a>
+									<% for (let cijenaVrijeme of trgovina.prices) { %>
+										<span>
+										<%= cijenaVrijeme.price %>kn &emsp;&emsp; (<%= cijenaVrijeme.datetime %>)
+											<%if (cijenaVrijeme === trgovina.prices[0] && user !== undefined) {%>
+												&emsp;&emsp;<a href="/report/<%=trgovina.TrgovinaID%>?item=<%=item.barcode%>" 
+                                                    class="li-link">Prijavi krivu cijenu</a>
+											<%}%>
+										</span>
+										<br>
+									<% } %>
+                                </li>
+                    
+                            <% } %> 
+                        </ul>
+                    </div>
+                <% } %>
+    
+                <div class="container-header">
+                    <h1><%= item.name %> (<%= barcode %>)</h1>
+                </div>
+
+
+            </div>
+        </div>
+
+		<%if (user != undefined) {%>
+        <div class="container half-width">
+            <div class="container-items">
+                <div class="container-tags">
+                    <% if(userTags.length == 0) { %>
+
+                        <h3>Dodaj oznaku:</h3>
+    
+                        <form method="post" action="/item/<%= barcode %>">
+                            <input type="text" name="tag" class="container-tag-text">
+                            <input type="submit" class="container-tag-btn">
+                        </form>
+    
+                        <h3>Još niste dali nijednu oznaku ovom proizvodu.</h3>
+                        <div>Preostalo Vam je još <%= leftTags %> oznaka za ovaj proizvod.</div>
+
+                    <% } else if(userTags.length < 5){ %>
+    
+                        <h3>Dodaj oznaku:</h3>
+                        <form method="post" action="/item/<%= barcode %>">
+                            <input type="text" name="tag" class="container-tag-text">
+                            <input type="submit" class="container-tag-btn">
+                        </form>
+
+                        <hr>
+                        <span>Vaše oznake ovom proizvodu:</span>
+
+                        <ul>
+                            <% for (let tag of userTags) { %>
+                                <li><%= tag.oznaka %></li>
+                            <% } %> 
+                        </ul>
+    
+                        <div>Preostalo Vam je još <%= leftTags %> oznaka za ovaj proizvod.</div>
+
+                    <% } else { %>
+
+                        <h3>Iskoristili ste svih 5 prijedloga oznaka za proizvod.</h3>
+                        <span>Vaše oznake ovom proizvodu:</span>
+    
+                        <ul>
+                            <% for (let tag of userTags) { %>
+                                <li><%= tag.oznaka %></li>
+                            <% } %> 
+                        </ul>
+
+                    <% } %> 
+                </div>
+            </div>
+        </div>
+		<%}%>
+    </div>
+
+</body>
+
+</html>

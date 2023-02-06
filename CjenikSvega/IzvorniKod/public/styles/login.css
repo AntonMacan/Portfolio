@@ -1,0 +1,83 @@
+body {
+    background: url("../images/background.jpg");
+}
+
+.link{
+    color: white !important;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.container{
+    background-color: white;
+    margin: 5rem auto;
+    border-radius: 2rem;
+    width: 60%;
+}
+
+.container-x{
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-left > img {
+    margin: 2rem auto;  
+}
+
+.container-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+}
+
+.container-right-btn:hover{
+    cursor: pointer;
+}
+
+.container-right-reg{
+    color: #1190cb;
+    text-decoration: none;
+}
+
+.container-right-reg:hover{
+    text-decoration: underline;
+    font-size: 1.05em;
+}
+
+.container-right-input{
+    margin: 0.5rem 2rem;
+    font-size: 1.3rem;
+}
+
+.container-right-btn{
+    margin-top: 2rem;
+    padding: 0.25rem 1rem;
+    font-size: 1.1rem;
+    background-color: #1190cb;
+    border: 2px solid #1190cb;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.container-right-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #1190cb;
+}
+
+.error{
+    padding: 1rem 0;
+    color: red
+}

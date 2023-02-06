@@ -1,0 +1,54 @@
+@model Objekt
+@{
+    ViewBag.Title = "Ažuriranje Objekta";
+}
+<tr hx-target="this" hx-swap="outerHTML">  
+    <td class="text-start">
+    </td>
+    <td class="text-start">
+        <label>@Model.Id</label>
+    </td>
+    
+    <td class="text-start">    
+            <input asp-for="Naziv" class="form-control" />
+        </td>
+    <td class="text-start">
+        <select class="form-select" asp-for="DionicaId" asp-items="ViewBag.Dionice">
+        </select>
+    </td>
+    <td class="text-start">
+        <input asp-for="Opis" class="form-control" />
+    </td>
+    <td class="text-start">
+        <input asp-for="TipObjekta" class="form-control" />
+    </td>
+    <td class="text-start">
+        <input asp-for="NadmorskaVisina" class="form-control" />
+    </td>
+    <td class="text-start">
+        <input asp-for="Stacionaza" class="form-control" />
+    </td>
+    <td class="text-start">
+        <input asp-for="DimenzijeM" class="form-control" />
+    </td>
+    <td class="text-start">
+            <input asp-for="GeografskaDuzina" class="form-control" />
+          </td>
+      <td class="text-start">
+        <input asp-for="GeografskaSirina" class="form-control" />
+      </td>
+    <td>
+        <input type="hidden" asp-for="Id" />
+        <button hx-include="closest tr"
+                hx-post="@Url.Action(nameof(ObjektController.Edit))"
+                class="btn btn-sm btn-primary" title="Spremi"><i class="fas fa-save"></i></button>
+      </td>
+      <td>
+        <button class="btn btn-sm cancel" 
+                hx-get="@Url.Action(nameof(ObjektController.Get), new { id = Model.Id })"            
+                title="Odustani"><i class="fas fa-undo-alt"></i></button>
+      </td>
+      <td>
+        <div asp-validation-summary="All"></div>
+      </td>
+    </tr>

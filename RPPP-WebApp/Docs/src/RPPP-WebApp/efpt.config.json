@@ -1,0 +1,109 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "RPPP05Context",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "RPPP_WebApp",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[Autoceste]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Cjenik]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Dionice]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ENCPostaja]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Kamere]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Koncesionari]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Multimedija]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[NaplatnaPostaja]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Obavijesti]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Objekt]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Odmoriste]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[OdrzavanjeObjekta]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ParkGospVoz]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[RadnoVrijeme]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Sadrzaj]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Slike]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TipOdrzavanja]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TipSadrzaja]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "fantom.RPPP05",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

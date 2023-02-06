@@ -1,0 +1,37 @@
+.home-form{
+    margin: 7.5rem auto;
+    text-align: center;
+    width: 25rem;
+}
+
+.logo{
+    width: 20rem;
+    padding-bottom: 2.5rem;
+}
+
+.home-form-input{
+    width: 17.5rem;
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+.home-form-input:focus{
+    outline: none;
+}
+
+.home-form-btn{
+    padding: 5px;
+    font-size: 1.1rem;
+    background-color: #1190cb;
+    border: 2px solid #1190cb;
+    color: white;
+}
+
+.home-form-btn:hover{
+    background-color: white;
+    color: #1190cb;
+}    
+
+.home-form-btn:hover{
+    cursor: pointer;
+}
