@@ -1,0 +1,87 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\NewFolder1\**" />
+    <Content Remove="Views\NewFolder1\**" />
+    <EmbeddedResource Remove="Views\NewFolder1\**" />
+    <None Remove="Views\NewFolder1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BaseLibrary" Version="1.1.0" />
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.4.0" />
+    <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.175" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IzvidaciWebApp.Providers.Http\IzvidaciWebApp.Providers.Http.csproj" />
+    <ProjectReference Include="..\IzvidaciWebApp.Providers\IzvidaciWebApp.Providers.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\ajax-header.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\ajax-header.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\alpine-morph.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\alpine-morph.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\class-tools.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\class-tools.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\client-side-templates.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\client-side-templates.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\debug.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\debug.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\disable-element.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\disable-element.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\event-header.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\event-header.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\head-support.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\head-support.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\include-vals.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\include-vals.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\json-enc.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\json-enc.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\loading-states.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\loading-states.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\method-override.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\method-override.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\morphdom-swap.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\morphdom-swap.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\multi-swap.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\multi-swap.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\path-deps.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\path-deps.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\preload.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\preload.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\rails-method.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\rails-method.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\remove-me.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\remove-me.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\restored.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\restored.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\sse.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\sse.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\ws.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\htmx\ext\ws.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\htmx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Akcije\Create.cshtml" />
+    <None Include="Views\Akcije\Edit.cshtml" />
+    <None Include="Views\Akcije\Index.cshtml" />
+    <None Include="Views\Aktivnosti\Create.cshtml" />
+    <None Include="Views\Aktivnosti\Edit.cshtml" />
+    <None Include="Views\Aktivnosti\Index.cshtml" />
+  </ItemGroup>
+
+</Project>

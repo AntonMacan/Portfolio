@@ -1,0 +1,12 @@
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.DataAccess.SqlServer/bin/Debug/net6.0/Clanstvo.DataAccess.SqlServer.deps.json
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.DataAccess.SqlServer/bin/Debug/net6.0/Clanstvo.DataAccess.SqlServer.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.DataAccess.SqlServer/bin/Debug/net6.0/Clanstvo.DataAccess.SqlServer.pdb
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.DataAccess.SqlServer/obj/Debug/net6.0/Clanstvo.DataAccess.SqlServer.csproj.AssemblyReference.cache
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.DataAccess.SqlServer/obj/Debug/net6.0/Clanstvo.DataAccess.SqlServer.GeneratedMSBuildEditorConfig.editorconfig
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.DataAccess.SqlServer/obj/Debug/net6.0/Clanstvo.DataAccess.SqlServer.AssemblyInfoInputs.cache
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.DataAccess.SqlServer/obj/Debug/net6.0/Clanstvo.DataAccess.SqlServer.AssemblyInfo.cs
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.DataAccess.SqlServer/obj/Debug/net6.0/Clanstvo.DataAccess.SqlServer.csproj.CoreCompileInputs.cache
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.DataAccess.SqlServer/obj/Debug/net6.0/Clanstvo.DataAccess.SqlServer.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.DataAccess.SqlServer/obj/Debug/net6.0/refint/Clanstvo.DataAccess.SqlServer.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.DataAccess.SqlServer/obj/Debug/net6.0/Clanstvo.DataAccess.SqlServer.pdb
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.DataAccess.SqlServer/obj/Debug/net6.0/ref/Clanstvo.DataAccess.SqlServer.dll

@@ -1,0 +1,56 @@
+﻿@model TrajniResursViewModel
+
+@{
+    ViewBag.Title = "Novi trajni resurs";
+}
+
+<h2>Unos novog resursa</h2>
+
+<form asp-action="CreateTrajni" method="post">
+    
+    <div class="mb-3">
+        <label asp-for="IdUdruga" class="form-label">Id udruge</label>
+        <select required class="form-select" asp-for="IdUdruga" asp-items="@ViewBag.Udruge">
+            <option selected value="" disabled>Odaberite udrugu</option>
+        </select>
+        <div class="form-text"><span asp-validation-for="IdUdruga" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="IdProstor" class="form-label">Id prostora</label>
+        <select required class="form-select" asp-for="IdProstor" asp-items="@ViewBag.Prostori">
+            <option selected value="" disabled>Odaberite prostor</option>
+        </select>
+        <div class="form-text"><span asp-validation-for="IdProstor" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Naziv" class="form-label">Naziv resursa</label>
+        <input asp-for="Naziv" class="form-control" maxlength="50" required oninvalid="this.setCustomValidity('Naziv resursa je obvezan')"/>
+        <div class="form-text"><span asp-validation-for="Naziv" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="DatumNabaveEdit" class="form-label">Datum nabave</label>
+        <input type="date" asp-for="DatumNabaveEdit" class="form-control" required/>
+        <div class="form-text"><span asp-validation-for="DatumNabaveEdit" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Dostupno" class="form-label"></label>
+        <input hidden="hidden" value="DA" asp-for="Dostupno" class="form-control" required/>
+        <div>DA</div>
+        <div class="form-text"><span asp-validation-for="Dostupno" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="InventarniBroj" class="form-label">Inventarni broj (6 znamenaka)</label>
+        <input asp-for="InventarniBroj" class="form-control" required pattern="[0-9]{6,6}"/>
+        <div class="form-text"><span asp-validation-for="InventarniBroj" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Napomena" class="form-label">Napomena</label>
+        <input asp-for="Napomena" class="form-control" maxlength="100"/>
+        <div class="form-text"><span asp-validation-for="Napomena" class="text-danger"></span></div>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Dodaj</button>
+        <a asp-action="IndexTrajni" class="btn btn-secondary">Odustani</a>
+    </div>
+</form>
+

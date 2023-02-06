@@ -1,0 +1,12 @@
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Domain/bin/Debug/net6.0/IzvidaciWebApp.Domain.deps.json
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Domain/bin/Debug/net6.0/IzvidaciWebApp.Domain.dll
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Domain/bin/Debug/net6.0/IzvidaciWebApp.Domain.pdb
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Domain/obj/Debug/net6.0/IzvidaciWebApp.Domain.csproj.AssemblyReference.cache
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Domain/obj/Debug/net6.0/IzvidaciWebApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Domain/obj/Debug/net6.0/IzvidaciWebApp.Domain.AssemblyInfoInputs.cache
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Domain/obj/Debug/net6.0/IzvidaciWebApp.Domain.AssemblyInfo.cs
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Domain/obj/Debug/net6.0/IzvidaciWebApp.Domain.csproj.CoreCompileInputs.cache
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Domain/obj/Debug/net6.0/IzvidaciWebApp.Domain.dll
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Domain/obj/Debug/net6.0/refint/IzvidaciWebApp.Domain.dll
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Domain/obj/Debug/net6.0/IzvidaciWebApp.Domain.pdb
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Domain/obj/Debug/net6.0/ref/IzvidaciWebApp.Domain.dll

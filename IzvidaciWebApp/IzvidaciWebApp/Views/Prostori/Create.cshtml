@@ -1,0 +1,49 @@
+@model IzvidaciWebApp.ViewModels.ProstorViewModel
+
+@{
+    ViewBag.Title = "Novi Prostor";
+}
+
+<h3>Unos novog prostora</h3>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="idUdruge" class="form-label">id Udruge</label>
+        <input asp-for="idUdruge" class="form-control" />
+        <div class="form-text"><span asp-validation-for="idUdruge" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="adresa" class="form-label">Adresa</label>
+        <input asp-for="adresa" class="form-control" />
+        <div class="form-text"><span asp-validation-for="adresa" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="namjena" class="form-label">Namjena</label>
+        <input asp-for="namjena" class="form-control" />
+        <div class="form-text"><span asp-validation-for="namjena" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="dodijelio" class="form-label">Dodjelio</label>
+        <input asp-for="dodijelio" class="form-control" />
+        <div class="form-text"><span asp-validation-for="dodijelio" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="dodjeljenoDo" class="form-label">Dodjeljeno do</label>
+        <input asp-for="dodjeljenoDo" class="form-control" />
+        <div class="form-text"><span asp-validation-for="dodjeljenoDo" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="geoDuzina" class="form-label">Geo Duzina</label>
+        <input asp-for="geoDuzina" class="form-control" />
+        <div class="form-text"><span asp-validation-for="geoDuzina" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="geoSirina" class="form-label">Geo Sirina</label>
+        <input asp-for="geoSirina" class="form-control" />
+        <div class="form-text"><span asp-validation-for="geoSirina" class="text-danger"></span></div>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Dodaj</button>
+        <a asp-action="Index" class="btn btn-secondary">Odustani</a>
+    </div>
+</form>

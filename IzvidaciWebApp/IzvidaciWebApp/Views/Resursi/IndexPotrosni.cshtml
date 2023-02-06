@@ -1,0 +1,57 @@
+﻿@model PotrosniResursiViewModel
+@{
+    ViewData["Title"] = "Potrosni Resursi";
+}
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<h1>Potrosni resursi</h1>
+<a asp-action="CreatePotrosni" class="btn btn-outline-dark">Unesi novi potrosni resurs</a>
+<table class="table table-sm table-striped table-hover" id="tabledrzave">
+    <thead>
+    <tr>
+        <th>Id resurs</th>
+        <th>Udruga</th>
+        <th>Prostor</th>
+        <th>Naziv</th>
+        <th>Datum nabave</th>
+        <th>Rok trajanja</th>
+        <th>Napomena</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var resurs in Model.Resursi)
+    {
+        <tr>
+            <td class="text-left">@resurs.IdResurs</td>
+            <td class="text-left">@resurs.Udruga</td>
+            <td class="text-left">@resurs.Prostor</td>
+            <td class="text-left">@resurs.Naziv</td>
+            <td class="text-left">@resurs.DatumNabave.ToString("dd.MM.yyyy.")</td>
+            <td class="text-left">@resurs.RokTrajanja.ToString("dd.MM.yyyy.")</td>
+            <td class="text-left">@resurs.Napomena</td>
+
+            <td class="btn-group-spacing">
+                <a class="btn btn-sm"
+                   style="background-color:gold;"
+                   method="get" asp-action="EditPotrosni" asp-route-id="@resurs.IdResurs"
+                   title="Ažuriraj"><i class="fas fa-edit whiteicon"></i></a>
+            
+                <a class="btn btn-sm"
+                   style="background-color:Crimson ;"
+                   onclick="return confirm('Jeste li sigurni da zelite izbrisati resurs @resurs.Naziv?')"
+                   asp-action="Delete" asp-route-id="@resurs.IdResurs"
+                   title="Obriši">
+                    <i class="fas fa-trash-alt whiteicon"></i>
+                </a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+@section scripts{
+    <script src="~/lib/jqueryui/jquery-ui.js"></script>
+    <script src="~/lib/htmx/htmx.min.js" asp-append-version="true"></script>
+}

@@ -1,0 +1,46 @@
+﻿@model PotrosniResursViewModel
+
+@{
+    ViewBag.Title = "Novi potrosni resurs";
+}
+
+<h2>Unos novog resursa</h2>
+
+<form asp-action="CreatePotrosni" method="post">
+    
+    <div class="mb-3">
+        <label asp-for="IdUdruga" class="form-label">Id udruge</label>
+        <input required asp-for="IdUdruga" class="form-control" type="number"/>
+        <div class="form-text"><span asp-validation-for="IdUdruga" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="IdProstor" class="form-label">Id prostora</label>
+        <input asp-for="IdProstor" class="form-control" required type="number"/>
+        <div class="form-text"><span asp-validation-for="IdProstor" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Naziv" class="form-label">Naziv resursa</label>
+        <input asp-for="Naziv" class="form-control" maxlength="50" required/>
+        <div class="form-text"><span asp-validation-for="Naziv" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="DatumNabave" class="form-label">Datum nabave</label>
+        <input type="date" asp-for="DatumNabave" class="form-control" required/>
+        <div class="form-text"><span asp-validation-for="DatumNabave" class="text-danger"></span></div>
+    </div>
+       <div class="mb-3">
+            <label asp-for="RokTrajanja" class="form-label">Rok trajanja</label>
+            <input type="date" asp-for="RokTrajanja" class="form-control" required/>
+            <div class="form-text"><span asp-validation-for="RokTrajanja" class="text-danger"></span></div>
+        </div>
+    <div class="mb-3">
+        <label asp-for="Napomena" class="form-label">Napomena</label>
+        <input asp-for="Napomena" class="form-control" maxlength="100" />
+        <div class="form-text"><span asp-validation-for="Napomena" class="text-danger"></span></div>
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Dodaj</button>
+        <a asp-action="IndexPotrosni" class="btn btn-secondary">Odustani</a>
+    </div>
+</form>

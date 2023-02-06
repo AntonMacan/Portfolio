@@ -1,0 +1,43 @@
+﻿@model IzvidaciWebApp.Domain.Models.Clanarina
+
+@{
+    ViewBag.Title = "Ažuriranje članarine";
+}
+
+<form asp-route-id="@Model.Id"
+      method="post">
+    <div class="form-group">
+        <label asp-for="Placenost"></label>
+        <div><span asp-validation-for="Placenost" class="text-danger"></span></div>
+        <input asp-for="Placenost" class="checkbox" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Iznos"></label>
+        <input required oninvalid="this.setCustomValidity('Iznos je obvezan')"
+               oninput="this.setCustomValidity('')" asp-for="Iznos" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Godina"></label>
+        <input required oninvalid="this.setCustomValidity('Godina je obvezna')"
+               oninput="this.setCustomValidity('')" asp-for="Godina" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ClanId">Član</label>
+        <select class="form-select" asp-for="ClanId" required oninvalid="this.setCustomValidity('Član je obvezan')"
+                oninput="this.setCustomValidity('')" asp-items="ViewBag.Clanovi">
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Datum"></label>
+        <div><span asp-validation-for="Datum" class="text-danger"></span></div>
+        <input asp-for="Datum" class="form-control" />
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Spremi</button>
+        <a asp-action="Index"
+           class="btn btn-secondary">Odustani</a>
+    </div>
+</form>
+@section scripts {
+    <partial name="IncludeValidation" />
+}

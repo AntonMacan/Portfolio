@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "zTmIkVYJcDFc4xvOuvZk+mUBjZmbxgrQi9zKR8pb06A=",
+  "Source": "ClanstvoWebApi",
+  "BasePath": "_content/ClanstvoWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

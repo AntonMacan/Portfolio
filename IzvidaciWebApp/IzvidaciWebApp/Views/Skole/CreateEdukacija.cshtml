@@ -1,0 +1,31 @@
+﻿@model EdukacijaViewModel
+
+@{
+    ViewBag.Title = "Dodavanje edukacije";
+}
+
+<form asp-action="CreateEdukacija"
+      method="post">
+    <div asp-validation-summary="All"></div>
+    <div class="form-group">
+        <label asp-for="NazivEdukacije">Naziv skole</label>
+        <div><span asp-validation-for="NazivEdukacije" class="text-danger"></span></div>
+        <input asp-for="NazivEdukacije" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="MjestoPbr">Mjesto</label>
+        <div><span asp-validation-for="MjestoPbr" class="text-danger"></span></div>
+        <input asp-for="MjestoPbr" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Opis">Opis</label>
+        <div><span asp-validation-for="Opis" class="text-danger"></span></div>
+        <input asp-for="Opis" class="form-control" />
+    </div>
+    <input type="hidden" asp-for="Id" />
+    <div class="text-center">
+        <button asp-route-skolaId="@ViewBag.idSkole" class="btn btn-primary" type="submit">Spremi</button>
+        <a asp-action="Index"
+           class="btn btn-secondary">Odustani</a>
+    </div>
+</form>

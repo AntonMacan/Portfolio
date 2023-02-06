@@ -1,0 +1,40 @@
+﻿@model SkolaViewModel
+
+@{
+    ViewBag.Title = "Dodavanje škole";
+}
+
+<form asp-action="CreateSkola"
+      method="post">
+    <div asp-validation-summary="All"></div>
+    <div class="form-group">
+        <label asp-for="NazivSkole">Naziv skole</label>
+        <input required oninvalid="this.setCustomValidity('Naziv škole je obvezan')"
+               oninput="this.setCustomValidity('')" asp-for="NazivSkole" class="form-control" />
+        <div class="form-text"><span asp-validation-for="NazivSkole" class="text-danger"></span></div>
+    </div>
+    <div class="form-group">
+        <label asp-for="MjestoPbr">Mjesto</label>
+        <select required class="form-select" asp-for="MjestoPbr" asp-items="@ViewBag.Mjesta">
+            <option selected value="" disabled>Odaberite mjesto</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Organizator">Organizator</label>
+        <select required class="form-select" asp-for="Organizator" asp-items="@ViewBag.Clanovi">
+        <option selected value="" disabled>Odaberite organizatora</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="KontaktOsoba">Kontakt osoba</label>
+        <select required class="form-select" asp-for="KontaktOsoba" asp-items="@ViewBag.Clanovi">
+        <option selected value="" disabled>Odaberite kontakt osobu</option>
+        </select>
+    </div>
+    <input type="hidden" asp-for="Id" />
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Spremi</button>
+        <a asp-action="Index"
+           class="btn btn-secondary">Odustani</a>
+    </div>
+</form>

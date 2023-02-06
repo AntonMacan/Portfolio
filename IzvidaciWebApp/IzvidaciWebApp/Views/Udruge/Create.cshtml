@@ -1,0 +1,40 @@
+﻿@model IzvidaciWebApp.ViewModels.UdrugaViewModel;
+
+@{
+    ViewBag.Title = "Nova udruga";
+}
+
+<h2>Unos nove udruge</h2>
+
+<form asp-action="Create" method="post">
+    
+    <div class="mb-3">
+        <label asp-for="OIB" class="form-label">OIB</label>
+        <input asp-for="OIB" class="form-control" />
+        <div class="form-text"><span asp-validation-for="OIB" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Naziv" class="form-label">Naziv udruge</label>
+        <input asp-for="Naziv" class="form-control" />
+        <div class="form-text"><span asp-validation-for="Naziv" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Sjediste" class="form-label">Sjediste udruge</label>
+        <input asp-for="Sjediste" class="form-control" />
+        <div class="form-text"><span asp-validation-for="Sjediste" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="BrMob" class="form-label">Broj mobitela</label>
+        <input asp-for="BrMob" class="form-control" />
+        <div class="form-text"><span asp-validation-for="BrMob" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Mail" class="form-label">Mail udruge</label>
+        <input asp-for="BrMob" class="form-control" />
+        <div class="form-text"><span asp-validation-for="BrMob" class="text-danger"></span></div>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Dodaj</button>
+        <a asp-action="Index" class="btn btn-secondary">Odustani</a>
+    </div>
+</form>

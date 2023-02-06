@@ -1,0 +1,49 @@
+﻿@model IzvidaciWebApp.ViewModels.CvrstiObjektiZaObitavanjeViewModel
+
+@{
+    ViewData["Title"] = "Čvrsti objekti za obitavanje";
+}
+
+<h1>Čvrsti objekti za obitavanje</h1>
+<a asp-action="Create">Unos novog objekta</a>
+
+<table class="table table-sm table-striped table-hover" id="tableObjekti">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Naziv</th>
+            <th>Ima sanitarni čvor</th>
+            <th>Poštanski broj</th>
+            <th>Opis</th>
+            <th>Broj Predviđenih spavaćih mjesta</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var objekt in Model.objekti)
+        {
+        <tr>
+            <td class="text-left">@objekt.IdTerenskaLokacija</td>
+            <td class="text-left">@objekt.NazivTerenskaLokacija</td>
+            <td class="text-left">@objekt.ImaSanitarniCvor</td>
+            <td class="text-left">@objekt.MjestoPbr</td>
+            <td class="text-left">@objekt.Opis</td>
+            <td class="text-left">@objekt.BrojPredvidenihSpavacihMjesta</td>
+
+            <td class="text-center">
+                <form asp-action="Edit" method="get" asp-route-id="@objekt.IdTerenskaLokacija">
+                    <input type="hidden" name="id" value="@objekt.IdTerenskaLokacija" />
+                    <button type="submit" class="btn btn-sm btn-primary update" title="Uredi"><i class="fas fa-trash-alt">Uredi</i></button>
+                </form>
+            </td>
+
+            <td>
+                <form asp-action="Delete" method="post" asp-route-id="@objekt.IdTerenskaLokacija">
+                    <input type="hidden" name="id" value="@objekt.IdTerenskaLokacija" />
+                    <button type="submit" class="btn btn-sm btn-danger delete" title="Obriši"><i class="fas fa-trash-alt">Obriši</i></button>
+                </form>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

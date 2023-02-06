@@ -1,0 +1,27 @@
+@model IzvidaciWebApp.ViewModels.VoditeljUdrugeViewModel
+
+@{
+    ViewBag.Title = "Ažuriranje voditelja udruge";
+}
+
+<form asp-route-id="@Model.IdClan"
+      method="post">
+    <div asp-validation-summary="All"></div>
+    <div class="form-group">
+        <div><span asp-validation-for="IdClan" class="text-danger"></span></div>
+        <input type="hidden" asp-for="IdClan" class="form-control" />
+
+        <label asp-for="Pozicija">Pozicija</label>
+        <div><span asp-validation-for="Pozicija" class="text-danger"></span></div>
+        <input asp-for="Pozicija" class="form-control" />
+
+        <label asp-for="NaPozicijiDo">NaPozicijiDo</label>
+        <div><span asp-validation-for="NaPozicijiDo" class="text-danger"></span></div>
+        <input asp-for="NaPozicijiDo" class="form-control" />
+
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Spremi</button>
+        <a asp-action="Index"
+           class="btn btn-secondary">Odustani</a>
+    </div>
+</form>

@@ -1,0 +1,41 @@
+﻿@model SkolaViewModel
+
+@{
+    ViewBag.Title = "Ažuriranje škole";
+}
+
+<form asp-action="EditSkola"
+      method="post">
+    <div asp-validation-summary="All"></div>
+    <div class="form-group">
+        <label asp-for="NazivSkole">Naziv skole</label>
+        <input required oninvalid="this.setCustomValidity('Naziv škole je obvezan')"
+               oninput="this.setCustomValidity('')" asp-for="NazivSkole" class="form-control" />
+        <input asp-for="NazivSkole" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="MjestoPbr">Mjesto</label>
+        <select class="form-select" asp-for="MjestoPbr" asp-items="@ViewBag.Mjesta"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Organizator">Organizator</label>
+        <select class="form-select" asp-for="MjestoPbr" asp-items="@ViewBag.Clanovi"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="KontaktOsoba">Kontakt osoba</label>
+        <select class="form-select" asp-for="MjestoPbr" asp-items="@ViewBag.Clanovi"></select>
+    </div>
+    <input type="hidden" asp-for="Id" />
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Spremi</button>
+        <a asp-action="Index"
+           class="btn btn-secondary">Odustani</a>
+    </div>
+</form>
+
+<script asp-src-include="~/lib/jquery-validate/**/jquery.validate.min.js"></script>
+<script asp-src-include="~/lib/jquery-validation-unobtrusive/**/*.min.js"></script>
+
+
+
+<script src="~/js/validation.js" asp-append-version="true"></script>

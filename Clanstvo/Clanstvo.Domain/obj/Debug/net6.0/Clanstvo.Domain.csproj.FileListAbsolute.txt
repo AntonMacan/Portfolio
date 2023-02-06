@@ -1,0 +1,15 @@
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/bin/Debug/net6.0/Clanstvo.Domain.deps.json
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/bin/Debug/net6.0/Clanstvo.Domain.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/bin/Debug/net6.0/Clanstvo.Domain.pdb
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/bin/Debug/net6.0/Clanstvo.Commons.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/bin/Debug/net6.0/Clanstvo.Commons.pdb
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/obj/Debug/net6.0/Clanstvo.Domain.csproj.AssemblyReference.cache
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/obj/Debug/net6.0/Clanstvo.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/obj/Debug/net6.0/Clanstvo.Domain.AssemblyInfoInputs.cache
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/obj/Debug/net6.0/Clanstvo.Domain.AssemblyInfo.cs
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/obj/Debug/net6.0/Clanstvo.Domain.csproj.CoreCompileInputs.cache
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/obj/Debug/net6.0/Clanstvo.Domain.csproj.CopyComplete
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/obj/Debug/net6.0/Clanstvo.Domain.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/obj/Debug/net6.0/refint/Clanstvo.Domain.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/obj/Debug/net6.0/Clanstvo.Domain.pdb
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/obj/Debug/net6.0/ref/Clanstvo.Domain.dll

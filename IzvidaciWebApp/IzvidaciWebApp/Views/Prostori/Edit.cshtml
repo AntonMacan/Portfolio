@@ -1,0 +1,51 @@
+@model IzvidaciWebApp.ViewModels.ProstorViewModel
+
+@{
+    ViewBag.Title = "Prostor";
+}
+
+<form asp-route-id="@Model.id"
+      method="post">
+  <div asp-validation-summary="All"></div>
+  <div class="form-group">
+    <label asp-for="idUdruge"></label>
+    <div><span asp-validation-for="idUdruge" class="text-danger"></span></div>
+    <input asp-for="idUdruge" class="form-control" />
+  </div>
+  <div class="form-group">
+    <label asp-for="adresa"></label>
+    <div><span asp-validation-for="adresa" class="text-danger"></span></div>
+    <input asp-for="adresa" class="form-control" />
+    </div>
+    <div class="form-group">
+    <label asp-for="namjena"></label>
+    <div><span asp-validation-for="namjena" class="text-danger"></span></div>
+    <input asp-for="namjena" class="form-control" />
+    </div>
+    <div class="form-group">
+    <label asp-for="dodijelio"></label>
+    <div><span asp-validation-for="dodijelio" class="text-danger"></span></div>
+    <input asp-for="dodijelio" class="form-control" />
+    </div>
+    <div class="form-group">
+    <label asp-for="dodjeljenoDo"></label>
+    <div><span asp-validation-for="dodjeljenoDo" class="text-danger"></span></div>
+    <input asp-for="dodjeljenoDo" class="form-control" />
+    </div>
+    <div class="form-group">
+    <label asp-for="geoDuzina"></label>
+    <div><span asp-validation-for="geoDuzina" class="text-danger"></span></div>
+    <input asp-for="geoDuzina" class="form-control" />
+    </div>
+    <div class="form-group">
+    <label asp-for="geoSirina"></label>
+    <div><span asp-validation-for="geoSirina" class="text-danger"></span></div>
+    <input asp-for="geoSirina" class="form-control" />
+    </div>
+
+    <div class="text-center">
+    <button class="btn btn-primary" type="submit">Spremi</button>
+    <a asp-action="Index"
+       class="btn btn-secondary">Odustani</a>
+  </div>
+</form>

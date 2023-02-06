@@ -1,0 +1,55 @@
+﻿@model PrijavljeniViewModel
+
+@{
+    ViewBag.Title = "Prijavljeni clanovi na edukaciju";
+}
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<h1>Prijavljeni na edukaciju</h1>
+<form asp-route-idEdukacije="@Model.IdEdukacije" asp-action="PrijaviPolaznika" method="post">
+        <select class="form-select" name="idClan" asp-items="@ViewBag.Clanovi">
+        </select>
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit">Prijavi</button>
+    </div>
+</form>
+<table class="table table-sm table-striped table-hover" >
+    <thead>
+        <tr>
+            <th>Id clan</th>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Datum prijave</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prijavljen in Model.prijavljeni)
+        {
+            <tr>
+                <td class="text-left">@prijavljen.IdClan</td>
+                <td class="text-left">@prijavljen.Ime</td>
+                <td class="text-left">@prijavljen.Prezime</td>
+                <td class="text-left">@prijavljen.Datum.ToString("dd/MM/yyyy")</td>
+                <td style="width: auto;">
+                    <div style="display: flex; margin-right: 0px;">
+                        <form style="flex: 1;" asp-action="OdjaviPolaznika" method="post" asp-route-idEdukacije="@Model.IdEdukacije" asp-route-idClan="@prijavljen.IdClan">
+                            <button style="margin-right: 0px;" type="submit" class="btn btn-outline-dark">
+                            Odjavi
+                        </button>
+                    </form>
+                        <form style="flex: 1;" asp-action="DolaziNaEdukaciju" method="post" asp-route-idEdukacije="@Model.IdEdukacije" asp-route-idClan="@prijavljen.IdClan">
+                            <button style="margin-left: 0px;"  type="submit" class="btn btn-outline-dark">
+                                Dolazi
+                        </button>
+                    </form>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts{
+    <script src="~/lib/jqueryui/jquery-ui.js"></script>
+    <script src="~/lib/htmx/htmx.min.js" asp-append-version="true"></script>
+}

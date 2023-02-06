@@ -1,0 +1,23 @@
+@model IzvidaciWebApp.ViewModels.RangStarostViewModel
+
+
+@{
+    ViewBag.Title = "Novi rang po zasluzi";
+}
+
+<h2>Unos novog ranga po zasluzi</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="naziv" class="form-label"></label>
+        <input asp-for="naziv" class="form-control" />
+        <div class="form-text"><span asp-validation-for="naziv" class="text-danger"></span></div>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Dodaj</button>
+        <a asp-action="Index" class="btn btn-secondary">Odustani</a>
+    </div>
+</form>
+@section scripts {
+    <partial name="IncludeValidation" />
+}

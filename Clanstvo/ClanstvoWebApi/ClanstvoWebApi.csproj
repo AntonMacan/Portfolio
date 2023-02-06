@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="BaseLibrary" Version="1.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Clanstvo.Commons\Clanstvo.Commons.csproj" />
+		<ProjectReference Include="..\Clanstvo.Domain\Clanstvo.Domain.csproj" />
+		<ProjectReference Include="..\Clanstvo.DataAccess.SqlServer\Clanstvo.DataAccess.SqlServer.csproj" />
+		<ProjectReference Include="..\Clanstvo.Repositories.SqlServer\Clanstvo.Repositories.SqlServer.csproj" />
+		<ProjectReference Include="..\Clanstvo.Repositories\Clanstvo.Repositories.csproj" />
+		<ProjectReference Include="..\Clanstvo.Providers.Http\Clanstvo.Providers.Http.csproj" />
+		<ProjectReference Include="..\Clanstvo.Providers\Clanstvo.Providers.csproj" />
+	</ItemGroup>
+
+</Project>

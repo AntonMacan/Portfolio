@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "Aktivnosti";
+}
+<a asp-action="Create">Unos nove aktivnosti</a>
+<h1>Aktivnosti</h1>
+<table class="table table-sm table-striped table-hover" id="tabledrzave">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Poštanski broj mjesta</th>
+            <th>Kontakt osoba</th>
+            <th>Opis</th>
+            <th>Id akcije</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var aktivnost in Model.aktivnosti)
+        {
+            <tr>
+                <td class="text-center">@aktivnost.IdAktivnost</td>
+                <td class="text-left">@aktivnost.MjestoPbr</td>
+                <td class="text-left">@aktivnost.KontaktOsoba</td>
+                <td class="text-left">@aktivnost.Opis</td>
+                <td class="text-left">@aktivnost.AkcijaId</td>
+                <td>
+                    <form asp-action="Delete" method="post"
+                      asp-route-id="@aktivnost.IdAktivnost">
+                        <input type="hidden" name="id" value="@aktivnost.IdAktivnost" />
+                        <button type="submit" class="btn btn-sm btn-danger delete" title="Obriši">Obriši</button>
+                    </form>
+                </td>
+                <td>
+                    <form asp-action="Edit" method="get"
+                      asp-route-id="@aktivnost.IdAktivnost">
+                        <input type="hidden" name="id" value="@aktivnost.IdAktivnost" />
+                        <button type="submit" class="btn btn-sm btn-danger update" title="Uredi">Uredi</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

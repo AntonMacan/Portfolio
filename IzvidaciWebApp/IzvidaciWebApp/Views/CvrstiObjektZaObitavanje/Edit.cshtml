@@ -1,0 +1,46 @@
+﻿ @model IzvidaciWebApp.ViewModels.CvrstiObjektZaObitavanjeViewModel
+
+@{
+    ViewBag.Title = "Ažuriranje čvrstog objekta za obitavanje";
+}
+
+<h2>Ažuriranje čvrstog objekta za obitavanje</h2>
+<h4>Id: @Model.IdTerenskaLokacija</h4>
+
+<form asp-route-id="@Model.IdTerenskaLokacija" method="post">
+    <div asp-validation-summary="All"></div>
+    <div class="mb-3">
+        <input type="hidden" asp-for="IdTerenskaLokacija" class="form-control" />
+        <div><span asp-validation-for="IdTerenskaLokacija" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="NazivTerenskaLokacija">Naziv</label>
+        <input asp-for="NazivTerenskaLokacija" class="form-control" />
+        <div><span asp-validation-for="NazivTerenskaLokacija" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="MjestoPbr">Poštanski broj</label>
+        <input asp-for="MjestoPbr" class="form-control" />
+        <div><span asp-validation-for="MjestoPbr" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Opis">Opis</label>
+        <input asp-for="Opis" class="form-control" />
+        <div><span asp-validation-for="Opis" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="BrojPredvidenihSpavacihMjesta">Broj predviđenih spavaćih mjesta</label>
+        <input asp-for="BrojPredvidenihSpavacihMjesta" class="form-control" />
+        <div><span asp-validation-for="BrojPredvidenihSpavacihMjesta" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ImaSanitarniCvor">Ima sanitarni čvor</label>
+        <input asp-for="ImaSanitarniCvor" type="checkbox" />
+        <div><span asp-validation-for="ImaSanitarniCvor" class="text-danger"></span></div>
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Spremi</button>
+        <a asp-action="Index" class="btn btn-secondary" btn-secondary>Odustani</a>
+    </div>
+</form>

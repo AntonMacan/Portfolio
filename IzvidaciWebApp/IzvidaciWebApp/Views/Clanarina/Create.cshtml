@@ -1,0 +1,47 @@
+﻿@model IzvidaciWebApp.ViewModels.ClanarinaViewModel;
+
+
+@{
+    ViewBag.Title = "Nova clanarina";
+}
+
+<h2>Unos nove članarine</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="Placenost" class="form-label"></label>
+        <input asp-for="Placenost" class="checkbox" />
+        <div class="form-text"><span asp-validation-for="Placenost" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Iznos" class="form-label"></label>
+        <input asp-for="Iznos" required oninvalid="this.setCustomValidity('Iznos članarine je obvezan')"
+               oninput="this.setCustomValidity('')" class="form-control" />
+        <div class="form-text"><span asp-validation-for="Iznos" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Godina" class="form-label"></label>
+        <input asp-for="Godina" required oninvalid="this.setCustomValidity('Godina članarine je obvezna')"
+               oninput="this.setCustomValidity('')" class="form-control" />
+        <div class="form-text"><span asp-validation-for="Godina" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Član</label>
+        <select class="form-control" asp-for="ClanId" required oninvalid="this.setCustomValidity('Član je obvezan')"
+                oninput="this.setCustomValidity('')" asp-items="ViewBag.Clanovi">
+            <option disabled selected value="">Odaberite člana</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Datum" class="form-label"></label>
+        <input asp-for="Datum" class="form-control" />
+        <div class="form-text"><span class="text-danger"></span></div>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Dodaj</button>
+        <a asp-action="Index" class="btn btn-secondary">Odustani</a>
+    </div>
+</form>
+@section scripts {
+    <partial name="IncludeValidation" />
+}

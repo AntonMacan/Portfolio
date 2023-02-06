@@ -1,0 +1,40 @@
+﻿@model IzvidaciWebApp.ViewModels.UdrugaViewModel
+
+@{
+    ViewBag.Title = "Ažuriranje udruge";
+}
+
+<form asp-route-id="@Model.IdUdruge"
+      method="post">
+    <div asp-validation-summary="All"></div>
+    <div class="form-group">
+        <div><span asp-validation-for="IdUdruge" class="text-danger"></span></div>
+        <input type="hidden" asp-for="IdUdruge" class="form-control" />
+
+        <label asp-for="OIB">OIB udruge</label>
+        <div><span asp-validation-for="OIB" class="text-danger"></span></div>
+        <input asp-for="OIB" class="form-control" />
+
+        <label asp-for="Naziv">Naziv udruge</label>
+        <div><span asp-validation-for="Naziv" class="text-danger"></span></div>
+        <input asp-for="Naziv" class="form-control" />
+
+        <label asp-for="Sjediste">Naziv udruge</label>
+        <div><span asp-validation-for="Sjediste" class="text-danger"></span></div>
+        <input asp-for="Sjediste" class="form-control" />
+
+        <label asp-for="BrMob">Naziv udruge</label>
+        <div><span asp-validation-for="BrMob" class="text-danger"></span></div>
+        <input asp-for="BrMob" class="form-control" />
+
+        <label asp-for="Mail">Naziv udruge</label>
+        <div><span asp-validation-for="Mail" class="text-danger"></span></div>
+        <input asp-for="Mail" class="form-control" />
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Spremi</button>
+        <a asp-action="Index"
+           class="btn btn-secondary">Odustani</a>
+    </div>
+</form>
+

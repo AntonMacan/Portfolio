@@ -1,0 +1,38 @@
+﻿@model IzvidaciWebApp.ViewModels.MaterijalnaPotrebaViewModel;
+
+@{
+    ViewBag.Title = "Novo mjesto";
+}
+
+<h2>Unos novog mjesta</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="IdMaterijalnePotrebe" class="form-label">Id</label>
+        <input asp-for="IdMaterijalnePotrebe" class="form-control" />
+        <div class="form-text"><span asp-validation-for="IdMaterijalnePotrebe" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Naziv" class="form-label">Naziv materijalne potrebe</label>
+        <input asp-for="Naziv" class="form-control" />
+        <div class="form-text"><span asp-validation-for="Naziv" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Organizator" class="form-label">Id organizatora</label>
+        <input asp-for="Organizator" class="form-control" />
+        <div class="form-text"><span asp-validation-for="Organizator" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Davatelj" class="form-label">Davatelj</label>
+        <input asp-for="Davatelj" class="form-control" />
+        <div class="form-text"><span asp-validation-for="Davatelj" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Zadovoljeno" class="form-label">Materijalna potreba zadovoljena</label>
+        <input asp-for="Zadovoljeno"  type="checkbox" />
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Dodaj</button>
+        <a asp-action="Index" class="btn btn-secondary">Odustani</a>
+    </div>
+</form>

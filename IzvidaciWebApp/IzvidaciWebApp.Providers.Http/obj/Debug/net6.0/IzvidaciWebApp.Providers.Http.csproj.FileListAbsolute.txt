@@ -1,0 +1,17 @@
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/bin/Debug/net6.0/IzvidaciWebApp.Providers.Http.deps.json
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/bin/Debug/net6.0/IzvidaciWebApp.Providers.Http.dll
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/bin/Debug/net6.0/IzvidaciWebApp.Providers.Http.pdb
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/bin/Debug/net6.0/IzvidaciWebApp.Domain.dll
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/bin/Debug/net6.0/IzvidaciWebApp.Providers.dll
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/bin/Debug/net6.0/IzvidaciWebApp.Providers.pdb
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/bin/Debug/net6.0/IzvidaciWebApp.Domain.pdb
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/obj/Debug/net6.0/IzvidaciWebApp.Providers.Http.csproj.AssemblyReference.cache
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/obj/Debug/net6.0/IzvidaciWebApp.Providers.Http.GeneratedMSBuildEditorConfig.editorconfig
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/obj/Debug/net6.0/IzvidaciWebApp.Providers.Http.AssemblyInfoInputs.cache
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/obj/Debug/net6.0/IzvidaciWebApp.Providers.Http.AssemblyInfo.cs
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/obj/Debug/net6.0/IzvidaciWebApp.Providers.Http.csproj.CoreCompileInputs.cache
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/obj/Debug/net6.0/IzvidaciWebApp.Providers.Http.csproj.CopyComplete
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/obj/Debug/net6.0/IzvidaciWebApp.Providers.Http.dll
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/obj/Debug/net6.0/refint/IzvidaciWebApp.Providers.Http.dll
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/obj/Debug/net6.0/IzvidaciWebApp.Providers.Http.pdb
+/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Providers.Http/obj/Debug/net6.0/ref/IzvidaciWebApp.Providers.Http.dll

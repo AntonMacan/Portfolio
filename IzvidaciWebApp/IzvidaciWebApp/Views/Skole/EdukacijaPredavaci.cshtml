@@ -1,0 +1,49 @@
+﻿@model PredavaciViewModel
+
+@{
+    ViewBag.Title = "Predavaci na edukaciji";
+}
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<h1>Predavaci na edukaciji</h1>
+<form asp-route-idEdukacije="@Model.IdEdukacije" asp-action="PrijaviPredavaca" method="post">
+    <div class="form-group">
+        <select class="form-select" name="idClan" asp-items="@ViewBag.Clanovi">
+        </select>
+        <button class="btn btn-primary" type="submit">Dodaj predavaca</button>
+    </div>
+</form>
+<table class="table table-sm table-striped table-hover" id="tabledrzave">
+    <thead>
+        <tr>
+            <th>Id predavac</th>
+            <th>Id clan</th>
+            <th>Ime</th>
+            <th>Prezime</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var predavac in Model.predavaci)
+        {
+            <tr>
+                <td class="text-left">@predavac.Id</td>
+                <td class="text-left">@predavac.IdClan</td>
+                <td class="text-left">@predavac.Ime</td>
+                <td class="text-left">@predavac.Prezime</td>
+                <td class="btn-group-spacing">
+
+                    <form style="flex: 1;" asp-action="OdjaviPredavaca" method="post" asp-route-idEdukacije="@Model.IdEdukacije" asp-route-idClan="@predavac.Id">
+                        <button style="margin-right: 0px;" type="submit" class="btn btn-outline-dark">
+                            Ukloni
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts{
+    <script src="~/lib/jqueryui/jquery-ui.js"></script>
+    <script src="~/lib/htmx/htmx.min.js" asp-append-version="true"></script>
+}

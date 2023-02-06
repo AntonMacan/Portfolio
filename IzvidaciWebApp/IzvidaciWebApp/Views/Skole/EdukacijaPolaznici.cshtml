@@ -1,0 +1,32 @@
+﻿@model PolazniciViewModel
+
+@{
+    ViewBag.Title = "Polaznici edukacije";
+}
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<h1>Polaznici edukacije</h1>
+<table class="table table-sm table-striped table-hover" id="tabledrzave">
+    <thead>
+        <tr>
+            <th>Id clan</th>
+            <th>Ime</th>
+            <th>Prezime</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var polaznik in Model.polaznici)
+        {
+            <tr>
+                <td class="text-left">@polaznik.IdClan</td>
+                <td class="text-left">@polaznik.Ime</td>
+                <td class="text-left">@polaznik.Prezime</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts{
+    <script src="~/lib/jqueryui/jquery-ui.js"></script>
+    <script src="~/lib/htmx/htmx.min.js" asp-append-version="true"></script>
+}

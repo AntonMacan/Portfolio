@@ -1,0 +1,44 @@
+@Model ProstoriViewModel
+@{
+    ViewData["Title"] = "Rangovi zasluga";
+}
+<h1>Prostori</h1>
+<table class="table table-sm table-striped table-hover" id="tabledrzave">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>IdUdruge</th>
+        <th>Adresa</th>
+        <th>Namjena</th>
+        <th>Dodijelio</th>
+        <th>Dodijeljeno Do</th>
+        <th>GeoDuzina</th>
+        <th>GeoSirina</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var prostor in Model.prostori)
+    {
+        <tr>
+            <td class="text-center">@prostor.id</td>
+            <td class="text-center">@prostor.idUdruge</td>
+            <td class="text-center">@prostor.adresa</td>
+            <td class="text-center">@prostor.namjena</td>
+            <td class="text-center">@prostor.dodijelio</td>
+            <td class="text-center">@prostor.dodjeljenoDo</td>
+            <td class="text-center">@prostor.geoDuzina</td>
+            <td class="text-center">@prostor.geoSirina</td>
+            
+            <td class="text-center">
+                <a asp-action="Edit" asp-route-id="@prostor.id" class="btn btn-sm btn-primary" title="Uredi"><i class="fas fa-edit"></i></a>
+            <td>
+                <form asp-action="Delete" method="post"
+                      asp-route-id="@prostor.id">
+                    <input type="hidden" name="id" value="@prostor.id" />
+                    <button type="submit" class="btn btn-sm btn-danger delete" title="Obriši"><i class="fas fa-trash-alt"></i></button>
+                </form>
+            </td> 
+        </tr>
+    }
+    </tbody>
+</table>

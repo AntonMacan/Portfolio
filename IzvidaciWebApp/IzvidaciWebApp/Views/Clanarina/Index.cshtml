@@ -1,0 +1,83 @@
+﻿@model  IzvidaciWebApp.ViewModels.ClanarineViewModel
+@{
+    ViewData["Title"] = "Clanarine";
+}
+<style>
+    body {
+        background-image: url("https://th.bing.com/th/id/R.5c73556efd3e74b85fd6eb916ff0369f?rik=IbKm1uokF53TPg&pid=ImgRaw&r=0");
+</style>
+
+<body>
+<h1>Članarine</h1>
+    <a class="btn btn-primary" asp-action="Create" asp-controller="Clanarina">Dodaj novu članarinu</a>
+<table class="table table-sm table-striped table-hover">
+    <thead>
+            <tr>
+                <th>
+                    <a asp-route-sort=1
+                       asp-route-ascending="@(Model.sort == 1 ? !Model.ascending : true)">
+                        Id
+                    </a>
+                </th>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>
+                    <a asp-route-sort=2
+                       asp-route-ascending="@(Model.sort == 1 ? !Model.ascending : true)">
+                        Godina
+                    </a>
+                </th>
+                <th>
+                    <a asp-route-sort=3
+                       asp-route-ascending="@(Model.sort == 1 ? !Model.ascending : true)">
+                        Iznos
+                    </a>
+                </th>
+                <th>
+                    <a asp-route-sort=4
+                       asp-route-ascending="@(Model.sort == 1 ? !Model.ascending : true)">
+                        Placenost
+                    </a>
+                </th>
+                <th>
+                    <a asp-route-sort=5
+                       asp-route-ascending="@(Model.sort == 1 ? !Model.ascending : true)">
+                        Datum
+                    </a>
+                </th>
+                <th></th>
+                <th></th>
+            </tr>
+    </thead>
+    <tbody>
+        @foreach (var clanarina in Model.clanarine)
+        {
+            <tr>
+                <td class="text-left">@clanarina.Id</td>
+                <td class="text-left">@clanarina.ClanIme</td>
+                <td class="text-left">@clanarina.ClanPrezime</td>
+                <td class="text-left">@clanarina.Godina</td>
+                <td class="text-left">@clanarina.Iznos</td>
+                <td class="text-middle"><input type="checkbox" @(clanarina.Placenost ? "checked" : "") disabled />
+                @*<td class="text-left">@clanarina.ClanId</td>*@
+                <td class="text-left">@clanarina.Datum?.ToString("dd.MM.yyyy.")</td>
+                <td>
+                <form>
+                    <a asp-action="Edit" method="post"
+                   asp-route-id="@clanarina.Id"
+                   class="btn btn-success" title="Uredi"><i class="fas fa-edit"></i> Uredi</a>
+                </form>
+                </td>
+                <td>
+                <form>
+                    <a asp-action="Delete" method="post"
+                    asp-route-id="@clanarina.Id"
+                      class="btn btn-danger" title="Obriši"><i class="fas fa-trash-alt"></i> Obriši</a>
+                </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</body>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin="anonymous"></script>

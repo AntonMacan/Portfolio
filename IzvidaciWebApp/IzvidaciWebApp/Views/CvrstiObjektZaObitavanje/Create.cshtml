@@ -1,0 +1,43 @@
+﻿@model IzvidaciWebApp.ViewModels.CvrstiObjektZaObitavanjeViewModel
+
+@{
+    ViewBag.Title = "Novi čvrsti objekt za obitavanje";
+}
+
+<h2>Unos novog čvrstog objekta za obitavanje</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <input asp-for="IdTerenskaLokacija" class="form-control" type="hidden" />
+        <div class="form-text"><span asp-validation-for="IdTerenskaLokacija" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="NazivTerenskaLokacija" class="form-label">Naziv</label>
+        <input asp-for="NazivTerenskaLokacija" class="form-control" />
+        <div class="form-text"><span asp-validation-for="NazivTerenskaLokacija" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="MjestoPbr" class="form-label">Poštanski broj</label>
+        <input asp-for="MjestoPbr" class="form-control" />
+        <div class="form-text"><span asp-validation-for="MjestoPbr" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Opis" class="form-label">Opis</label>
+        <input asp-for="Opis" class="form-control" />
+        <div class="form-text"><span asp-validation-for="Opis" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="BrojPredvidenihSpavacihMjesta" class="form-label">Broj predviđenih spavaćih mjesta</label>
+        <input asp-for="BrojPredvidenihSpavacihMjesta" class="form-control" />
+        <div class="form-text"><span asp-validation-for="BrojPredvidenihSpavacihMjesta" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ImaSanitarniCvor" class="form-label">Ima sanitarni čvor</label>
+        <input asp-for="ImaSanitarniCvor" type="checkbox" />
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Dodaj</button>
+        <a asp-action="Index" class="btn btn-secondary">Odustani</a>
+    </div>
+</form>

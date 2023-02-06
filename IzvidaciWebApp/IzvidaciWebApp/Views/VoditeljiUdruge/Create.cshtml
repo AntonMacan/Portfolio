@@ -1,0 +1,25 @@
+@model IzvidaciWebApp.ViewModels.VoditeljUdrugeViewModel;
+
+@{
+    ViewBag.Title = "Novi voditelj udruge";
+}
+
+<h2>Unos novog voditelja udruge</h2>
+
+<form asp-action="Create" method="post">
+
+    <div class="mb-3">
+        <label asp-for="Pozicija" class="form-label">Pozicija</label>
+        <input asp-for="Pozicija" class="form-control" />
+        <div class="form-text"><span asp-validation-for="Pozicija" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="NaPozicijiDo" class="form-label">NaPozicijiDo</label>
+        <input asp-for="NaPozicijiDo" class="form-control" />
+        <div class="form-text"><span asp-validation-for="NaPozicijiDo" class="text-danger"></span></div>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Dodaj</button>
+        <a asp-action="Index" class="btn btn-secondary">Odustani</a>
+    </div>
+</form>

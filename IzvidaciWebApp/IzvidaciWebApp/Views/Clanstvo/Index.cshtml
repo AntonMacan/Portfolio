@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Članstvo";
+}
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+
+    body {
+        background-image: url("https://th.bing.com/th/id/R.5c73556efd3e74b85fd6eb916ff0369f?rik=IbKm1uokF53TPg&pid=ImgRaw&r=0")
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    img {
+        user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+</style>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<body>
+<div class="grid-container">
+    <div class="grid-item">
+        <form style="padding: 3%">
+            <a class="btn btn-primary btn-lg" asp-action="Index" asp-controller="Clan">Prikaz svih članova</a>
+        </form>
+        <form style="padding: 3%">
+            <a class="btn btn-primary btn-lg" asp-area="" asp-controller="Clanarina" asp-action="Index">Prikaz svih članarina</a>
+       </form>
+       <form style="padding: 3%">
+           <a class="btn btn-info btn-lg" asp-area="" asp-controller="RangStarost" asp-action="Index">Rangovi po starosti</a>
+       </form>
+       <form style="padding: 3%">
+           <a class="btn btn-info btn-lg"  asp-route-ascending="true" asp-route-sort="1" asp-controller="RangZasluga" asp-action="Index">Rangovi po zasluzi</a>
+      </form>
+    </div>
+    <div class="grid-item">
+        <img src="https://pluspng.com/img-png/boy-scouts-png-hd-15-free-cub-scout-clip-free-png-cub-scouts-382.png">
+    </div>
+
+</div>
+</body>

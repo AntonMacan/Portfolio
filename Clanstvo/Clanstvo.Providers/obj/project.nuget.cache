@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1ccfS1z4yRXy7gWLUxrOlqTeb0y0QYgpbtiH6PeRgVS4MTzTu+1ZDqOPN9+AsnAauSlOa+iwJA0BeMoGItHe8A==",
+  "success": true,
+  "projectFilePath": "/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/Clanstvo.Providers.csproj",
+  "expectedPackageFiles": [
+    "/home/macko14/.nuget/packages/baselibrary/1.0.0/baselibrary.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

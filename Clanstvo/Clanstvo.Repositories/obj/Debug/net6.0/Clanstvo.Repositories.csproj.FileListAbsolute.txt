@@ -1,0 +1,17 @@
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/bin/Debug/net6.0/Clanstvo.Repositories.deps.json
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/bin/Debug/net6.0/Clanstvo.Repositories.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/bin/Debug/net6.0/Clanstvo.Repositories.pdb
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/bin/Debug/net6.0/Clanstvo.Commons.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/bin/Debug/net6.0/Clanstvo.Domain.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/bin/Debug/net6.0/Clanstvo.Commons.pdb
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/bin/Debug/net6.0/Clanstvo.Domain.pdb
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/obj/Debug/net6.0/Clanstvo.Repositories.csproj.AssemblyReference.cache
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/obj/Debug/net6.0/Clanstvo.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/obj/Debug/net6.0/Clanstvo.Repositories.AssemblyInfoInputs.cache
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/obj/Debug/net6.0/Clanstvo.Repositories.AssemblyInfo.cs
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/obj/Debug/net6.0/Clanstvo.Repositories.csproj.CoreCompileInputs.cache
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/obj/Debug/net6.0/Clanstvo.Repositories.csproj.CopyComplete
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/obj/Debug/net6.0/Clanstvo.Repositories.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/obj/Debug/net6.0/refint/Clanstvo.Repositories.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/obj/Debug/net6.0/Clanstvo.Repositories.pdb
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Repositories/obj/Debug/net6.0/ref/Clanstvo.Repositories.dll

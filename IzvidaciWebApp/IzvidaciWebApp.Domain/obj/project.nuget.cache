@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "V3FtpqpqI2VkRYr1ye2wIpZLFQvjw00DY2PU7aB24MDnIzAJDb6NTvWhaStgLj6/fJNcVD9gvBV480EUbsyvhA==",
+  "success": true,
+  "projectFilePath": "/home/macko14/RiderProjects/IzvidaciWebApp/IzvidaciWebApp.Domain/IzvidaciWebApp.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/macko14/.nuget/packages/baselibrary/1.1.0/baselibrary.1.1.0.nupkg.sha512",
+    "/home/macko14/.nuget/packages/fluentvalidation/11.4.0/fluentvalidation.11.4.0.nupkg.sha512",
+    "/home/macko14/.nuget/packages/fluentvalidation.aspnetcore/11.2.2/fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "/home/macko14/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.2.1/fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
+    "/home/macko14/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/2.1.0/microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

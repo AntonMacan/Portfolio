@@ -1,0 +1,17 @@
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/bin/Debug/net6.0/Clanstvo.Providers.deps.json
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/bin/Debug/net6.0/Clanstvo.Providers.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/bin/Debug/net6.0/Clanstvo.Providers.pdb
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/bin/Debug/net6.0/Clanstvo.Commons.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/bin/Debug/net6.0/Clanstvo.Domain.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/bin/Debug/net6.0/Clanstvo.Domain.pdb
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/bin/Debug/net6.0/Clanstvo.Commons.pdb
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/obj/Debug/net6.0/Clanstvo.Providers.csproj.AssemblyReference.cache
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/obj/Debug/net6.0/Clanstvo.Providers.GeneratedMSBuildEditorConfig.editorconfig
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/obj/Debug/net6.0/Clanstvo.Providers.AssemblyInfoInputs.cache
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/obj/Debug/net6.0/Clanstvo.Providers.AssemblyInfo.cs
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/obj/Debug/net6.0/Clanstvo.Providers.csproj.CoreCompileInputs.cache
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/obj/Debug/net6.0/Clanstvo.Providers.csproj.CopyComplete
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/obj/Debug/net6.0/Clanstvo.Providers.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/obj/Debug/net6.0/refint/Clanstvo.Providers.dll
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/obj/Debug/net6.0/Clanstvo.Providers.pdb
+/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Providers/obj/Debug/net6.0/ref/Clanstvo.Providers.dll

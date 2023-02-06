@@ -1,0 +1,34 @@
+﻿@model IzvidaciWebApp.Providers.Http.Dtos.AktivnostDto;
+
+@{
+    ViewBag.Title = "Nova aktivnost";
+}
+
+<h2>Unos nove Aktivnosti</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="MjestoPbr" class="form-label">Poštanski broj mjesta</label>
+        <input asp-for="MjestoPbr" class="form-control" />
+        <div class="form-text"><span asp-validation-for="MjestoPbr" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="KontaktOsoba" class="form-label">Kontakt osoba</label>
+        <input asp-for="KontaktOsoba" class="form-control" />
+        <div class="form-text"><span asp-validation-for="KontaktOsoba" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Opis" class="form-label"></label>
+        <input asp-for="Opis" class="form-control" />
+        <div class="form-text"><span asp-validation-for="Opis" class="text-danger"></span></div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="AkcijaId" class="form-label">Id akcije</label>
+        <input asp-for="AkcijaId" class="form-control" />
+        <div class="form-text"><span asp-validation-for="AkcijaId" class="text-danger"></span></div>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Dodaj</button>
+        <a asp-action="Index" class="btn btn-secondary">Odustani</a>
+    </div>
+</form>

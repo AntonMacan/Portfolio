@@ -1,0 +1,23 @@
+@model IzvidaciWebApp.Domain.Models.RangZasluga
+@{
+    ViewBag.Title = "Ažuriranje rang zasluga";
+}
+
+<form asp-route-id="@Model.Id"
+      method="post">
+    <div class="form-group">
+      <label asp-for="Naziv">Naziv ranga po zasluzi</label>
+          <div><span asp-validation-for="Naziv" class="text-danger"></span></div>
+          <input asp-for="Naziv" class="form-control" />
+  </div>
+    <div class="text-center">
+    <button class="btn btn-primary" type="submit">Spremi</button>
+        <a asp-action="Index"
+           class="btn btn-secondary">Odustani</a>
+  </div>
+</form>
+
+
+@section scripts {
+    <partial name="IncludeValidation" />
+}

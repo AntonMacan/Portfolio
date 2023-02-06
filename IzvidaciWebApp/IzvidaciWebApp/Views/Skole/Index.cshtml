@@ -1,0 +1,52 @@
+﻿@model SkoleViewModel
+
+@{
+    ViewBag.Title = "Skole";
+}
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<h1>Skole</h1>
+<a asp-action="CreateSkola" class="btn btn-outline-dark">Unos nove skole</a>
+<table class="table table-sm table-striped table-hover" id="tabledrzave">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Naziv</th>
+            <th>Naziv mjesta</th>
+            <th>Organizator</th>
+            <th>Kontakt osoba</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var skola in Model.skole)
+        {
+            <tr>
+                <td class="text-center">@skola.Id</td>
+                <td class="text-left">@skola.NazivSkole</td>
+                <td class="text-left">@skola.NazivMjesto</td>
+                <td class="text-left">@skola.ImeOrganizator @skola.PrezimeOrganizator</td>
+                <td class="text-left">@skola.ImeKontakt @skola.PrezimeKontakt</td>
+                <td class="btn-group-spacing">
+                    <a class="btn btn-sm"
+                   style="background-color:gold;"
+                   method="get" asp-action="EditSkola" asp-route-id="@skola.Id"
+                   title="Ažuriraj"><i class="fas fa-edit whiteicon"></i></a>
+
+                    <a class="btn btn-sm"
+                        style="background-color:Crimson ;"
+                   onclick="return confirm('Jeste li sigurni da zelite izbrisati skolu @skola.NazivSkole?')"
+                        asp-action="DeleteSkola" asp-route-id="@skola.Id"
+                        title="Obriši">
+                        <i class="fas fa-trash-alt whiteicon"></i>
+                    </a>
+                    <a asp-action="SkolaEdukacije" asp-route-idSkole="@skola.Id" class="btn btn-outline-dark">Edukacije</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts{
+    <script src="~/lib/jqueryui/jquery-ui.js"></script>
+    <script src="~/lib/htmx/htmx.min.js" asp-append-version="true"></script>
+}

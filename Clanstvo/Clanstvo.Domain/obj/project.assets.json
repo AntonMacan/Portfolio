@@ -1,0 +1,120 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "BaseLibrary/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BaseLibrary.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/BaseLibrary.dll": {}
+        }
+      },
+      "Clanstvo.Commons/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BaseLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Clanstvo.Commons.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Clanstvo.Commons.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BaseLibrary/1.0.0": {
+      "sha512": "7OOZRP3SFh6wVY1A/ayHfyIraKMJ5LxVG+ea0MIkHcAyJnRjK5NokNg2SnxbKhf3KWlKorP7jYNks2nr3E+/Mw==",
+      "type": "package",
+      "path": "baselibrary/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "baselibrary.1.0.0.nupkg.sha512",
+        "baselibrary.nuspec",
+        "lib/net6.0/BaseLibrary.dll"
+      ]
+    },
+    "Clanstvo.Commons/1.0.0": {
+      "type": "project",
+      "path": "../Clanstvo.Commons/Clanstvo.Commons.csproj",
+      "msbuildProject": "../Clanstvo.Commons/Clanstvo.Commons.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "BaseLibrary >= 1.0.0",
+      "Clanstvo.Commons >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/macko14/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/Clanstvo.Domain.csproj",
+      "projectName": "Clanstvo.Domain",
+      "projectPath": "/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/Clanstvo.Domain.csproj",
+      "packagesPath": "/home/macko14/.nuget/packages/",
+      "outputPath": "/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Domain/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/macko14/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.pkg.github.com/FER-Projekt-R-22-23/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Commons/Clanstvo.Commons.csproj": {
+              "projectPath": "/home/macko14/RiderProjects/Clanstvo2/Clanstvo/Clanstvo.Commons/Clanstvo.Commons.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "BaseLibrary": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.405/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
